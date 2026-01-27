@@ -1,6 +1,5 @@
-# TouchFret
-TouchFret
+# Midivana
 
-fretboard midi controller for ipad
 
-https://santismo.github.io/TouchFret/
+midi controller for ipad
+
