@@ -1,29 +1,35 @@
-# Midivana Mac Key Setup with Hammerspoon
+# Midivana Mac Key Setup
 
-Midivana sends MIDI CC messages from its Mac key pads. Hammerspoon receives those CCs on the Mac and turns them into real keystrokes.
+Midivana sends MIDI CC messages from its Mac key pads. The preferred receiver is the Qwerty Fretboard app, which now creates a MIDI destination named `qwerty-fretboard control` and lets you map incoming CCs to QWERTY commands in Settings.
 
-Default CC mapping:
+Default Midivana key row:
 
 - CC 80: Left arrow
 - CC 81: Right arrow
-- CC 82: Up arrow
 - CC 83: Down arrow
+- CC 82: Up arrow
 - CC 84: I key
 
-Setup:
+Qwerty Fretboard setup:
 
 1. Connect the iPad to the Mac and enable the iPad/CoreMIDI connection in Audio MIDI Setup if needed.
-2. In Midivana, choose the Mac as the MIDI output destination.
-3. In Hammerspoon, put this script in `~/.hammerspoon/init.lua`.
-4. Reload Hammerspoon.
-5. Turn on `Show Mac key pads` in Midivana Performance settings.
+2. Open Qwerty Fretboard and leave `Receive MIDI CC from Midivana` enabled in Settings.
+3. In Midivana, choose `qwerty-fretboard control` as the MIDI output destination.
+4. Turn on `Show Mac key pads` in Midivana Performance settings.
+5. Edit the key pads in Midivana's Keys settings, or edit the receiving CC mappings in Qwerty Fretboard Settings.
+
+Optional Hammerspoon fallback:
+
+1. In Midivana, choose the Mac or iPad/CoreMIDI connection as the MIDI output destination.
+2. Put this script in `~/.hammerspoon/init.lua`.
+3. Reload Hammerspoon.
 
 ```lua
 local ccToKey = {
   [80] = { key = "left", label = "Left" },
   [81] = { key = "right", label = "Right" },
-  [82] = { key = "up", label = "Up" },
   [83] = { key = "down", label = "Down" },
+  [82] = { key = "up", label = "Up" },
   [84] = { key = "i", label = "I" },
 }
 

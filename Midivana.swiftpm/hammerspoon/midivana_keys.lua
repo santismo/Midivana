@@ -6,6 +6,7 @@
 --      midivanaKeys = require("midivana_keys").start()
 -- 3. Hammerspoon menu bar icon > Reload Config.
 --
+-- Midivana's default popup row is Left, Right, Down, Up, I.
 -- In Midivana, make custom Key pads or CC controls that send these CC numbers.
 -- A value >= threshold fires the key once; value <= releaseBelow arms it again.
 
@@ -22,8 +23,8 @@ obj.listenToVirtualSources = false
 obj.mappings = {
   [80] = { key = "left", label = "Left" },
   [81] = { key = "right", label = "Right" },
-  [82] = { key = "up", label = "Up" },
   [83] = { key = "down", label = "Down" },
+  [82] = { key = "up", label = "Up" },
   [84] = { key = "i", label = "I" },
 }
 

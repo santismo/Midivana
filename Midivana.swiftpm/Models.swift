@@ -219,7 +219,7 @@ struct ThemeSettings: Codable, Equatable {
   var gradientBottom = CodableColor(hex: 0xFFB36A)
   var markerMode = "edges"
   var markerShape = "dot"
-  var markerOffset = -18.0
+  var markerOffset = -80.0
   var markerColor = CodableColor(red: 1, green: 1, blue: 1, opacity: 0.7)
   var rowGap = 7.0
   var padGap = 8.0
@@ -248,6 +248,106 @@ struct CustomItem: Identifiable, Codable, Equatable {
   var keyCommand = "ArrowLeft"
   var labelSize = 64.0
   var rotation = 0.0
+}
+
+struct MacKeyPad: Identifiable, Codable, Equatable {
+  var id: UUID
+  var label: String
+  var cc: Int
+  var pressValue: Int
+  var x: Double
+  var y: Double
+  var width: Double
+  var height: Double
+
+  init(
+    id: UUID = UUID(),
+    label: String = "Key",
+    cc: Int = 80,
+    pressValue: Int = 127,
+    x: Double = 0.04,
+    y: Double = 0.18,
+    width: Double = 0.16,
+    height: Double = 0.64
+  ) {
+    self.id = id
+    self.label = label
+    self.cc = cc
+    self.pressValue = pressValue
+    self.x = x
+    self.y = y
+    self.width = width
+    self.height = height
+  }
+
+  private enum CodingKeys: String, CodingKey {
+    case id
+    case label
+    case cc
+    case pressValue
+    case x
+    case y
+    case width
+    case height
+  }
+
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    id = try container.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
+    label = try container.decodeIfPresent(String.self, forKey: .label) ?? "Key"
+    cc = try container.decodeIfPresent(Int.self, forKey: .cc) ?? 80
+    pressValue = try container.decodeIfPresent(Int.self, forKey: .pressValue) ?? 127
+    x = try container.decodeIfPresent(Double.self, forKey: .x) ?? 0.04
+    y = try container.decodeIfPresent(Double.self, forKey: .y) ?? 0.18
+    width = try container.decodeIfPresent(Double.self, forKey: .width) ?? 0.16
+    height = try container.decodeIfPresent(Double.self, forKey: .height) ?? 0.64
+    self = normalized
+  }
+
+  var normalized: MacKeyPad {
+    var copy = self
+    copy.label = copy.label.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "Key" : copy.label
+    copy.cc = min(max(0, copy.cc), 127)
+    copy.pressValue = min(max(1, copy.pressValue), 127)
+    copy.width = min(max(0.06, copy.width), 1)
+    copy.height = min(max(0.12, copy.height), 1)
+    copy.x = min(max(0, copy.x), 1 - copy.width)
+    copy.y = min(max(0, copy.y), 1 - copy.height)
+    return copy
+  }
+
+  static func defaultRow(
+    leftCC: Int = 80,
+    rightCC: Int = 81,
+    downCC: Int = 83,
+    upCC: Int = 82,
+    iCC: Int = 84,
+    pressValue: Int = 127
+  ) -> [MacKeyPad] {
+    let width = 0.16
+    let gap = 0.035
+    let startX = 0.05
+    let y = 0.2
+    let height = 0.6
+    let entries: [(String, Int)] = [
+      ("←", leftCC),
+      ("→", rightCC),
+      ("↓", downCC),
+      ("↑", upCC),
+      ("i", iCC)
+    ]
+    return entries.enumerated().map { index, entry in
+      MacKeyPad(
+        label: entry.0,
+        cc: entry.1,
+        pressValue: pressValue,
+        x: startX + Double(index) * (width + gap),
+        y: y,
+        width: width,
+        height: height
+      ).normalized
+    }
+  }
 }
 
 struct CustomSnapGrid: Codable, Equatable {
@@ -467,6 +567,8 @@ struct AppPreset: Identifiable, Codable, Equatable {
   var keyPadCCUp = 82
   var keyPadCCDown = 83
   var keyPadCCI = 84
+  var keyPadEditMode = false
+  var keyPads = MacKeyPad.defaultRow()
   var fretCount = 13
   var keyboardOctaves = 2
   var keyboardRows = 2
@@ -531,6 +633,18 @@ struct AppPreset: Identifiable, Codable, Equatable {
     keyPadCCUp = try container.decodeIfPresent(Int.self, forKey: .keyPadCCUp) ?? defaults.keyPadCCUp
     keyPadCCDown = try container.decodeIfPresent(Int.self, forKey: .keyPadCCDown) ?? defaults.keyPadCCDown
     keyPadCCI = try container.decodeIfPresent(Int.self, forKey: .keyPadCCI) ?? defaults.keyPadCCI
+    keyPadEditMode = try container.decodeIfPresent(Bool.self, forKey: .keyPadEditMode) ?? defaults.keyPadEditMode
+    let decodedKeyPads = try container.decodeIfPresent([MacKeyPad].self, forKey: .keyPads) ?? []
+    keyPads = decodedKeyPads.isEmpty
+      ? MacKeyPad.defaultRow(
+        leftCC: keyPadCCLeft,
+        rightCC: keyPadCCRight,
+        downCC: keyPadCCDown,
+        upCC: keyPadCCUp,
+        iCC: keyPadCCI,
+        pressValue: keyPadPressValue
+      )
+      : decodedKeyPads.map(\.normalized)
     fretCount = try container.decodeIfPresent(Int.self, forKey: .fretCount) ?? defaults.fretCount
     keyboardOctaves = try container.decodeIfPresent(Int.self, forKey: .keyboardOctaves) ?? defaults.keyboardOctaves
     keyboardRows = try container.decodeIfPresent(Int.self, forKey: .keyboardRows) ?? defaults.keyboardRows

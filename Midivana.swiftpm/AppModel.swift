@@ -23,6 +23,7 @@ final class AppModel: ObservableObject {
   @Published private(set) var heldSustainNotes = Set<ActiveNote>()
   @Published private(set) var lastSentVelocity = 0
   @Published private(set) var lastKeyCommand = ""
+  @Published private(set) var activeKeyPadIDs = Set<UUID>()
   @Published var sustainButtonActive = false {
     didSet {
       if !sustainButtonActive {
@@ -42,6 +43,7 @@ final class AppModel: ObservableObject {
   private var noteRepeatTask: Task<Void, Never>?
   private var noteRepeatStep = 0
   private var layoutChangeInFlight = false
+  private var midiOutputsCancellable: AnyCancellable?
 
   init() {
     preset = presetStore.presets.first ?? .default
@@ -57,6 +59,9 @@ final class AppModel: ObservableObject {
     if preset.accelMax == 0.8 {
       preset.accelMax = 1.0
     }
+    if preset.theme.markerOffset == -18 {
+      preset.theme.markerOffset = -80
+    }
     if preset.quickCCNumbers.isEmpty {
       preset.quickCCNumbers = [preset.cc1Number, preset.cc2Number]
     }
@@ -66,11 +71,23 @@ final class AppModel: ObservableObject {
     if !UserDefaults.standard.bool(forKey: "MidivanaMacKeyPadsUserConfigured") && !preset.showMacKeyPads {
       preset.showMacKeyPads = true
     }
+    preset.keyPadEditMode = false
+    if preset.keyPads.isEmpty {
+      resetKeyPadsToDefaultRow()
+    } else {
+      preset.keyPads = preset.keyPads.map(\.normalized)
+    }
     motion.valueHandler = { [weak self] value in
       Task { @MainActor in
         self?.sendMotionValue(value)
       }
     }
+    midiOutputsCancellable = midi.$outputs
+      .sink { [weak self] outputs in
+        Task { @MainActor in
+          self?.autoSelectPreferredOutput(from: outputs)
+        }
+      }
     syncMotion()
   }
 
@@ -89,6 +106,23 @@ final class AppModel: ObservableObject {
 
   func refreshMIDI() {
     midi.refreshEndpoints()
+  }
+
+  private func autoSelectPreferredOutput(from outputs: [MIDIEndpointInfo]) {
+    if let selectedOutputID, outputs.contains(where: { $0.id == selectedOutputID }) {
+      return
+    }
+    selectedOutputID = preferredOutputID(in: outputs)
+  }
+
+  private func preferredOutputID(in outputs: [MIDIEndpointInfo]) -> Int32? {
+    let preferredNames = ["idam midi host", "idam", "qwerty-fretboard control", "qwerty", "ipad", "iphone"]
+    for preferredName in preferredNames {
+      if let match = outputs.first(where: { $0.name.localizedCaseInsensitiveContains(preferredName) }) {
+        return match.id
+      }
+    }
+    return nil
   }
 
   func setLayout(_ layout: PerformanceLayout) {
@@ -176,12 +210,125 @@ final class AppModel: ObservableObject {
   }
 
   func setKeyPadCC(number: Int, pressed: Bool) {
-    midi.sendControlChange(
-      controller: number,
-      value: pressed ? preset.keyPadPressValue.clamped(to: 64...127) : 0,
-      channel: preset.midiChannel,
-      outputID: selectedOutputID
+    sendKeyPadControlChange(controller: number, value: pressed ? preset.keyPadPressValue.clamped(to: 64...127) : 0)
+  }
+
+  func setKeyPad(_ keyPad: MacKeyPad, pressed: Bool) {
+    let normalized = keyPad.normalized
+    if pressed {
+      activeKeyPadIDs.insert(normalized.id)
+    } else {
+      activeKeyPadIDs.remove(normalized.id)
+    }
+    sendKeyPadControlChange(controller: normalized.cc, value: pressed ? normalized.pressValue : 0)
+  }
+
+  func beginKeyPad(_ keyPad: MacKeyPad) {
+    guard !preset.keyPadEditMode, !activeKeyPadIDs.contains(keyPad.id) else { return }
+    setKeyPad(keyPad, pressed: true)
+  }
+
+  func endKeyPad(_ keyPad: MacKeyPad) {
+    guard activeKeyPadIDs.contains(keyPad.id) else { return }
+    setKeyPad(keyPad, pressed: false)
+  }
+
+  func setKeyPadEditMode(_ enabled: Bool) {
+    guard preset.keyPadEditMode != enabled else { return }
+    if enabled {
+      releaseActiveKeyPads()
+    }
+    preset.keyPadEditMode = enabled
+    preset.keyPads = preset.keyPads.map(\.normalized)
+    if !enabled {
+      updateCurrentPreset()
+    }
+  }
+
+  func addKeyPad() {
+    let count = preset.keyPads.count
+    let column = count % 5
+    let row = (count / 5) % 3
+    let next = MacKeyPad(
+      label: "K\(count + 1)",
+      cc: nextAvailableKeyPadCC(),
+      pressValue: preset.keyPadPressValue,
+      x: 0.05 + Double(column) * 0.18,
+      y: 0.18 + Double(row) * 0.24,
+      width: 0.15,
+      height: 0.52
+    ).normalized
+    preset.keyPads.append(next)
+  }
+
+  func duplicateKeyPad(_ keyPad: MacKeyPad) {
+    var copy = keyPad.normalized
+    copy.id = UUID()
+    copy.x = min(1 - copy.width, copy.x + 0.04)
+    copy.y = min(1 - copy.height, copy.y + 0.04)
+    preset.keyPads.append(copy)
+  }
+
+  func deleteKeyPad(_ keyPad: MacKeyPad) {
+    preset.keyPads.removeAll { $0.id == keyPad.id }
+  }
+
+  func deleteKeyPad(id: UUID) {
+    preset.keyPads.removeAll { $0.id == id }
+  }
+
+  func deleteLastKeyPad() {
+    _ = preset.keyPads.popLast()
+  }
+
+  func resetKeyPadsToDefaultRow() {
+    preset.keyPadCCLeft = 80
+    preset.keyPadCCRight = 81
+    preset.keyPadCCDown = 83
+    preset.keyPadCCUp = 82
+    preset.keyPadCCI = 84
+    preset.keyPads = MacKeyPad.defaultRow(
+      leftCC: preset.keyPadCCLeft,
+      rightCC: preset.keyPadCCRight,
+      downCC: preset.keyPadCCDown,
+      upCC: preset.keyPadCCUp,
+      iCC: preset.keyPadCCI,
+      pressValue: preset.keyPadPressValue
     )
+  }
+
+  private func releaseActiveKeyPads() {
+    let activeIDs = activeKeyPadIDs
+    for keyPad in preset.keyPads where activeIDs.contains(keyPad.id) {
+      setKeyPad(keyPad, pressed: false)
+    }
+    activeKeyPadIDs.removeAll()
+  }
+
+  private func sendKeyPadControlChange(controller: Int, value: Int) {
+    let selectedID = selectedOutputID
+    midi.sendControlChange(
+      controller: controller,
+      value: value,
+      channel: preset.midiChannel,
+      outputID: selectedID
+    )
+    guard let qwertyID = qwertyFretboardOutputID(), qwertyID != selectedID else { return }
+    midi.sendControlChange(
+      controller: controller,
+      value: value,
+      channel: preset.midiChannel,
+      outputID: qwertyID
+    )
+  }
+
+  private func qwertyFretboardOutputID() -> Int32? {
+    midi.outputs.first { output in
+      let name = output.name.lowercased()
+      return name.contains("qwerty-fretboard control")
+        || name.contains("qwerty fretboard control")
+        || name.contains("qwerty")
+    }?.id
   }
 
   func bend(_ amount: Double, channel: Int) {
@@ -194,6 +341,7 @@ final class AppModel: ObservableObject {
   }
 
   func releaseAll(sendGlobalReset: Bool = true) {
+    releaseActiveKeyPads()
     let notesToRelease = activeNotes
     let channelsToReset = Set(notesToRelease.map(\.channel))
     for active in notesToRelease {
@@ -217,6 +365,14 @@ final class AppModel: ObservableObject {
   }
 
   private func releaseForLayoutChange() {
+    let notesToRelease = activeNotes
+    let channelsToReset = Set(notesToRelease.map(\.channel))
+    for active in notesToRelease {
+      midi.sendNoteOff(note: active.note, channel: active.channel, outputID: selectedOutputID)
+    }
+    for channel in channelsToReset {
+      midi.resetPitchBend(channel: channel, outputID: selectedOutputID)
+    }
     activeNotes.removeAll()
     activeNoteCounts.removeAll()
     activeNoteVelocities.removeAll()
@@ -224,6 +380,14 @@ final class AppModel: ObservableObject {
     sustainButtonActive = false
     stopVibrato()
     stopNoteRepeat()
+  }
+
+  private func nextAvailableKeyPadCC() -> Int {
+    let used = Set(preset.keyPads.map(\.cc))
+    for cc in 80...127 where !used.contains(cc) {
+      return cc
+    }
+    return 80
   }
 
   func beginSustainControl() {

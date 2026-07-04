@@ -27,6 +27,7 @@ struct SettingsSheet: View {
     Form {
       DisclosureGroup("MIDI") { midiSection }
       DisclosureGroup("Performance") { performanceSection }
+      DisclosureGroup("Key Pads") { keyPadsSection }
       DisclosureGroup("Velocity") { velocitySection }
       DisclosureGroup("Fretboard") { fretboardSection }
       DisclosureGroup("Keyboard") { keyboardSection }
@@ -85,6 +86,11 @@ struct SettingsSheet: View {
           .font(.caption.monospaced())
       }
 
+      if !midi.lastOutgoingMessage.isEmpty {
+        Text("Last output: \(midi.lastOutgoingMessage.map { String(format: "%02X", $0) }.joined(separator: " "))")
+          .font(.caption.monospaced())
+      }
+
       Button {
         app.refreshMIDI()
       } label: {
@@ -125,17 +131,57 @@ struct SettingsSheet: View {
       Toggle("Show note repeat button", isOn: $app.preset.showNoteRepeatControls)
       if app.preset.showMacKeyPads {
         Stepper("Key pad press value \(app.preset.keyPadPressValue)", value: $app.preset.keyPadPressValue, in: 64...127)
-        Stepper("Left CC \(app.preset.keyPadCCLeft)", value: $app.preset.keyPadCCLeft, in: 0...127)
-        Stepper("Right CC \(app.preset.keyPadCCRight)", value: $app.preset.keyPadCCRight, in: 0...127)
-        Stepper("Up CC \(app.preset.keyPadCCUp)", value: $app.preset.keyPadCCUp, in: 0...127)
-        Stepper("Down CC \(app.preset.keyPadCCDown)", value: $app.preset.keyPadCCDown, in: 0...127)
-        Stepper("I CC \(app.preset.keyPadCCI)", value: $app.preset.keyPadCCI, in: 0...127)
-        DisclosureGroup("Mac key setup help") {
-          Text("Hammerspoon receives these CCs and sends Mac keystrokes. Default mapping: 80 left, 81 right, 82 up, 83 down, 84 i.")
-          Text("A complete setup doc and example Lua script are included at Resources/Docs/MacKeySetup.md in this project.")
-          Text("To add more keys, add another CC mapping in Hammerspoon and assign that CC to a Midivana key pad.")
+        Button {
+          app.resetKeyPadsToDefaultRow()
+        } label: {
+          Label("Reset Default Key Row", systemImage: "arrow.counterclockwise")
         }
       }
+    }
+  }
+
+  private var keyPadsSection: some View {
+    Section("Keyboard CC Buttons") {
+      Toggle("Show Mac key pads", isOn: $app.preset.showMacKeyPads)
+      Toggle("Edit arrangement in mini window", isOn: keyPadEditModeBinding)
+      Stepper("Default press value \(app.preset.keyPadPressValue)", value: $app.preset.keyPadPressValue, in: 1...127)
+
+      KeyPadArrangeEditor(app: app)
+        .frame(height: 148)
+
+      ForEach($app.preset.keyPads) { $keyPad in
+        DisclosureGroup("\(keyPad.label.isEmpty ? "Key" : keyPad.label)  CC \(keyPad.cc)") {
+          TextField("Label", text: $keyPad.label)
+          Stepper("CC \(keyPad.cc)", value: $keyPad.cc, in: 0...127)
+          Stepper("Press value \(keyPad.pressValue)", value: $keyPad.pressValue, in: 1...127)
+          SliderRow(title: "X \(Int(keyPad.x * 100))%", value: $keyPad.x, range: 0...1)
+          SliderRow(title: "Y \(Int(keyPad.y * 100))%", value: $keyPad.y, range: 0...1)
+          SliderRow(title: "W \(Int(keyPad.width * 100))%", value: $keyPad.width, range: 0.06...1)
+          SliderRow(title: "H \(Int(keyPad.height * 100))%", value: $keyPad.height, range: 0.12...1)
+
+          HStack {
+            Button {
+              app.duplicateKeyPad(keyPad)
+            } label: {
+              Label("Copy", systemImage: "plus.square.on.square")
+            }
+
+            Button(role: .destructive) {
+              app.deleteKeyPad(keyPad)
+            } label: {
+              Label("Delete", systemImage: "trash")
+            }
+          }
+        }
+      }
+    }
+  }
+
+  private var keyPadEditModeBinding: Binding<Bool> {
+    Binding {
+      app.preset.keyPadEditMode
+    } set: { enabled in
+      app.setKeyPadEditMode(enabled)
     }
   }
 
@@ -305,7 +351,7 @@ struct SettingsSheet: View {
           Text("Diamond").tag("diamond")
         }
 
-        SliderRow(title: "Marker offset \(Int(app.preset.theme.markerOffset))px", value: $app.preset.theme.markerOffset, range: -400...400)
+        SliderRow(title: "Marker distance \(Int(app.preset.theme.markerOffset))px", value: $app.preset.theme.markerOffset, range: -400...400)
         ColorPicker("Marker color", selection: colorBinding(\.markerColor), supportsOpacity: true)
       }
 
@@ -670,6 +716,105 @@ struct SettingsSheet: View {
     let allowed = CharacterSet.alphanumerics.union(CharacterSet(charactersIn: "-_ "))
     let filtered = name.unicodeScalars.map { allowed.contains($0) ? Character($0) : "-" }
     return String(filtered).trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "Midivana-Preset" : String(filtered)
+  }
+}
+
+private struct KeyPadArrangeEditor: View {
+  @ObservedObject var app: AppModel
+  @State private var selectedID: UUID?
+  @State private var dragStart: [UUID: CGPoint] = [:]
+
+  var body: some View {
+    VStack(spacing: 8) {
+      HStack(spacing: 8) {
+        Button {
+          app.addKeyPad()
+          selectedID = app.preset.keyPads.last?.id
+        } label: {
+          Label("Add", systemImage: "plus")
+        }
+
+        Button(role: .destructive) {
+          removeSelected()
+        } label: {
+          Label("Remove", systemImage: "minus")
+        }
+        .disabled(app.preset.keyPads.isEmpty)
+
+        Button {
+          app.resetKeyPadsToDefaultRow()
+          selectedID = app.preset.keyPads.first?.id
+        } label: {
+          Label("Reset", systemImage: "arrow.counterclockwise")
+        }
+      }
+
+      GeometryReader { proxy in
+        ZStack(alignment: .topLeading) {
+          RoundedRectangle(cornerRadius: 8, style: .continuous)
+            .fill(Color.white.opacity(0.055))
+            .overlay(RoundedRectangle(cornerRadius: 8).stroke(.white.opacity(0.12), lineWidth: 1))
+
+          ForEach($app.preset.keyPads) { $keyPad in
+            arrangeKey($keyPad, in: proxy.size)
+          }
+        }
+      }
+    }
+  }
+
+  private func removeSelected() {
+    if let selectedID, app.preset.keyPads.contains(where: { $0.id == selectedID }) {
+      app.deleteKeyPad(id: selectedID)
+    } else {
+      app.deleteLastKeyPad()
+    }
+    selectedID = app.preset.keyPads.last?.id
+  }
+
+  private func arrangeKey(_ keyPad: Binding<MacKeyPad>, in size: CGSize) -> some View {
+    let pad = keyPad.wrappedValue.normalized
+    let width = max(28, size.width * CGFloat(pad.width))
+    let height = max(28, size.height * CGFloat(pad.height))
+    let isSelected = selectedID == pad.id
+    return Text(pad.label)
+      .font(.caption.weight(.bold))
+      .lineLimit(1)
+      .minimumScaleFactor(0.55)
+      .frame(width: width, height: height)
+      .background(app.preset.theme.panel.color.opacity(0.88), in: RoundedRectangle(cornerRadius: 7, style: .continuous))
+      .overlay(
+        RoundedRectangle(cornerRadius: 7)
+          .stroke(isSelected ? app.preset.theme.activeGlow.color : app.preset.theme.padBorder.color.opacity(0.45), lineWidth: isSelected ? 2 : 1)
+      )
+      .position(
+        x: size.width * CGFloat(pad.x + pad.width / 2),
+        y: size.height * CGFloat(pad.y + pad.height / 2)
+      )
+      .contentShape(Rectangle())
+      .onTapGesture {
+        selectedID = pad.id
+      }
+      .gesture(keyDragGesture(keyPad, in: size))
+  }
+
+  private func keyDragGesture(_ keyPad: Binding<MacKeyPad>, in size: CGSize) -> some Gesture {
+    DragGesture(minimumDistance: 0)
+      .onChanged { value in
+        let id = keyPad.wrappedValue.id
+        selectedID = id
+        if dragStart[id] == nil {
+          dragStart[id] = CGPoint(x: keyPad.wrappedValue.x, y: keyPad.wrappedValue.y)
+        }
+        guard let start = dragStart[id] else { return }
+        var next = keyPad.wrappedValue
+        next.x = Double(start.x) + Double(value.translation.width / max(1, size.width))
+        next.y = Double(start.y) + Double(value.translation.height / max(1, size.height))
+        keyPad.wrappedValue = next.normalized
+      }
+      .onEnded { _ in
+        dragStart.removeValue(forKey: keyPad.wrappedValue.id)
+      }
   }
 }
 

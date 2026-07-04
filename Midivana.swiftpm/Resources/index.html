@@ -41,7 +41,9 @@
         --pad-anim-end: 100% 50%;
         --pad-anim-angle: 135deg;
         --marker-color: rgba(255, 255, 255, 0.7);
-        --marker-offset: 80px;
+        --marker-offset: -80px;
+        --marker-offset-top: 80px;
+        --marker-offset-bottom: -80px;
         --marker-width: 6px;
         --marker-height: 6px;
         --marker-radius: 999px;
@@ -305,7 +307,15 @@
         align-items: center;
         justify-items: center;
         width: 100%;
-        margin: var(--marker-offset) 0;
+        margin: 0;
+      }
+
+      #markers-top {
+        transform: translateY(var(--marker-offset-top));
+      }
+
+      #markers-bottom {
+        transform: translateY(var(--marker-offset-bottom));
       }
 
       .fret-markers .marker-dot {
@@ -2380,13 +2390,14 @@
 
       .settings-panel {
         position: fixed;
-        inset: 0;
+        top: 70px;
+        right: 16px;
+        bottom: 16px;
         display: none;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.7);
+        align-items: flex-start;
+        justify-content: flex-end;
+        background: transparent;
         z-index: 10;
-        padding: 16px;
       }
 
       .settings-panel.open {
@@ -2394,7 +2405,7 @@
       }
 
       .settings-card {
-        width: min(1100px, 100%);
+        width: min(680px, calc(100vw - 32px));
         max-height: 90vh;
         background: var(--panel-strong);
         border-radius: 18px;
@@ -3402,9 +3413,9 @@
               </select>
             </div>
             <div class="field">
-              <label for="marker-offset">Marker offset</label>
-              <input id="marker-offset" type="range" min="-200" max="120" value="80" step="1" />
-              <span id="marker-offset-value">80px</span>
+              <label for="marker-offset">Marker distance</label>
+              <input id="marker-offset" type="range" min="-200" max="120" value="-80" step="1" />
+              <span id="marker-offset-value">-80px</span>
             </div>
             <div class="field">
               <label for="marker-color">Marker color</label>
@@ -3799,7 +3810,7 @@
         "custom-layout-name": "",
         "marker-mode": "edges",
         "marker-shape": "dot",
-        "marker-offset": "80",
+        "marker-offset": "-80",
         "marker-color": "#ffffff",
         "shape-select": "circle",
         "corner-radius": "16",
@@ -13476,6 +13487,8 @@
         const clamped = clamp(Number(value), -200, 120);
         markerOffsetRange.value = String(clamped);
         document.documentElement.style.setProperty("--marker-offset", `${clamped}px`);
+        document.documentElement.style.setProperty("--marker-offset-top", `${-clamped}px`);
+        document.documentElement.style.setProperty("--marker-offset-bottom", `${clamped}px`);
         markerOffsetValue.textContent = `${clamped}px`;
       }
 

@@ -6,6 +6,7 @@ final class MIDIService: ObservableObject {
   @Published private(set) var outputs: [MIDIEndpointInfo] = []
   @Published private(set) var inputs: [MIDIEndpointInfo] = []
   @Published private(set) var lastIncomingMessage: [UInt8] = []
+  @Published private(set) var lastOutgoingMessage: [UInt8] = []
   @Published private(set) var externalActiveNotes = Set<ActiveNote>()
 
   private var client = MIDIClientRef()
@@ -103,6 +104,9 @@ final class MIDIService: ObservableObject {
     guard isReady, let destination = destination(for: outputID) else { return }
     let channelNibble = UInt8(max(0, min(15, channel - 1)))
     let bytes = [status | channelNibble, UInt8(clamping: data1), UInt8(clamping: data2)]
+    DispatchQueue.main.async {
+      self.lastOutgoingMessage = bytes
+    }
     send(bytes, to: destination)
   }
 
