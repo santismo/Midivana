@@ -1132,6 +1132,65 @@
         transform: translate(-50%, -50%);
       }
 
+      /* A coiled rail with a responsive, springy handle for custom sliders. */
+      .custom-pad[data-widget-style="spring"][data-widget^="slider"] {
+        --widget-track-size: 22px;
+        --widget-handle-size: 25px;
+        --widget-handle-radius: 50%;
+      }
+
+      .custom-pad[data-widget-style="spring"][data-widget^="slider"] .widget-track {
+        background-color: transparent;
+        background-image:
+          repeating-linear-gradient(
+            45deg,
+            transparent 0 5px,
+            var(--widget-track) 5px 7px,
+            transparent 7px 12px
+          ),
+          repeating-linear-gradient(
+            -45deg,
+            transparent 0 5px,
+            var(--widget-track) 5px 7px,
+            transparent 7px 12px
+          );
+        background-size: 18px 18px;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 0 10px var(--widget-glow);
+      }
+
+      .custom-pad[data-widget-style="spring"][data-widget^="slider"] .widget-handle {
+        border: 2px solid var(--widget-ring);
+        background:
+          radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.98) 0 10%, transparent 12%),
+          var(--widget-handle);
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.22), 0 0 16px var(--widget-glow);
+      }
+
+      .custom-pad[data-widget-style="spring"][data-widget^="slider"]:active .widget-handle {
+        animation: spring-slider-handle 480ms cubic-bezier(0.22, 1.45, 0.36, 1) both;
+      }
+
+      @keyframes spring-slider-handle {
+        0%,
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+
+        42% {
+          transform: translate(-50%, -50%) scale(1.22, 0.78);
+        }
+
+        68% {
+          transform: translate(-50%, -50%) scale(0.94, 1.08);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .custom-pad[data-widget-style="spring"][data-widget^="slider"]:active .widget-handle {
+          animation: none;
+        }
+      }
+
       .custom-pad[data-widget-track="off"] .widget-track {
         display: none !important;
       }
@@ -2874,6 +2933,7 @@
                 <option value="bold">Bold</option>
                 <option value="glass">Glass</option>
                 <option value="glow">Glow</option>
+                <option value="spring">Spring</option>
               </select>
             </div>
             <div class="editor-field">

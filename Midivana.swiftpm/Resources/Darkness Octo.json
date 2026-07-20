@@ -1,0 +1,4923 @@
+{
+  "layout" : {
+    "flipHorizontal" : false,
+    "gridColumns" : 13,
+    "gridRows" : 5,
+    "id" : "40975617-7D56-4C05-BC6D-35F58CCBA51E",
+    "items" : [
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "C34D1835-9C46-4861-BD0B-CDB299009C43",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "0",
+        "labelSize" : 64,
+        "note" : 64,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.05,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "1CCEB794-1DB7-459C-A3F4-D4F4CE5801BF",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "1",
+        "labelSize" : 64,
+        "note" : 65,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.11923076923076924,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "BC948B66-63F2-4CD2-9368-2CD46609C0A0",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "2",
+        "labelSize" : 64,
+        "note" : 66,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.18846153846153846,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "91DE6CBC-462A-4CE0-8914-E047C16BC64E",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "3",
+        "labelSize" : 64,
+        "note" : 67,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.2576923076923077,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "0B478C9D-95EF-437E-9E83-925939A5527F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "4",
+        "labelSize" : 64,
+        "note" : 68,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.3269230769230769,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "5745D0BF-7CA1-4558-AF90-51BB5A8FBD7F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "5",
+        "labelSize" : 64,
+        "note" : 69,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.39615384615384613,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "487F13FE-2C82-4D51-AF88-D36E0852C52B",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "6",
+        "labelSize" : 64,
+        "note" : 70,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.4653846153846154,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "94665FBE-6F53-472A-A35A-DFEAB26CBCCB",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "7",
+        "labelSize" : 64,
+        "note" : 71,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.5346153846153847,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "1ED605D9-79D9-41CC-90DC-A39E1ADE31BE",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "8",
+        "labelSize" : 64,
+        "note" : 72,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6038461538461539,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "B87B45A8-8E42-41BF-ABA5-A2EEDB8535F2",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "9",
+        "labelSize" : 64,
+        "note" : 73,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6730769230769231,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "8122DACA-4C26-4069-80C0-154E00E63873",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "10",
+        "labelSize" : 64,
+        "note" : 74,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.7423076923076923,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "C5679514-2CB1-4B94-A8C6-C33415B5F2D1",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "11",
+        "labelSize" : 64,
+        "note" : 75,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8115384615384617,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 6,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "FD7CD4A8-7C13-4E8C-B624-E057DA415FB0",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "12",
+        "labelSize" : 64,
+        "note" : 76,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8807692307692309,
+        "y" : 0.16
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "5D329876-537F-4AF6-A512-DE83B44812BD",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "0",
+        "labelSize" : 64,
+        "note" : 59,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.05,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "181790CE-4A29-4C7D-8F22-EEB8213EAE1E",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "1",
+        "labelSize" : 64,
+        "note" : 60,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.11923076923076924,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "814EAD55-8191-494B-AF83-BAEAA0F86273",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "2",
+        "labelSize" : 64,
+        "note" : 61,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.18846153846153846,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "6AAA4B35-0EF8-4FF3-BF34-AF5000DF2A4F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "3",
+        "labelSize" : 64,
+        "note" : 62,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.2576923076923077,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "C12EA282-BA91-458B-995E-F5D51CF6889B",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "4",
+        "labelSize" : 64,
+        "note" : 63,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.3269230769230769,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "1640CFAF-DEDE-4FC0-B689-BFE5F413C7BF",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "5",
+        "labelSize" : 64,
+        "note" : 64,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.39615384615384613,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "5CF88A5D-AD93-4FEB-9E01-6877C564C882",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "6",
+        "labelSize" : 64,
+        "note" : 65,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.4653846153846154,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "166C5365-A068-4DA5-80A7-7C2EBE1BA596",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "7",
+        "labelSize" : 64,
+        "note" : 66,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.5346153846153847,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "4E3B2FB1-53F7-44A4-B8FC-9F35F2E78F21",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "8",
+        "labelSize" : 64,
+        "note" : 67,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6038461538461539,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "1F7392C3-4F7F-492C-AD0E-A9A3BF56E2BD",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "9",
+        "labelSize" : 64,
+        "note" : 68,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6730769230769231,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "C3742D23-7044-45A2-B1E2-08164D98E1BE",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "10",
+        "labelSize" : 64,
+        "note" : 69,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.7423076923076923,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "38F5595F-F678-4544-B4A9-AF43865BA18F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "11",
+        "labelSize" : 64,
+        "note" : 70,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8115384615384617,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 5,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "A5F28E02-CFBA-4EAD-9F29-EBB6CC793842",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "12",
+        "labelSize" : 64,
+        "note" : 71,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8807692307692309,
+        "y" : 0.267
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "ABFFC50D-2DF9-48B2-9A94-44E7915D95B6",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "0",
+        "labelSize" : 64,
+        "note" : 55,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.05,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "F189EFE0-8CD9-4941-A217-A3298DD3C654",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "1",
+        "labelSize" : 64,
+        "note" : 56,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.11923076923076924,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "498AA331-280F-4D36-9C33-A74E3051F11D",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "2",
+        "labelSize" : 64,
+        "note" : 57,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.18846153846153846,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "7A215DD2-10F8-466B-985F-942DF9BC40CF",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "3",
+        "labelSize" : 64,
+        "note" : 58,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.2576923076923077,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "61B8F659-46EB-4F6F-A92D-AC81D2DD7A29",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "4",
+        "labelSize" : 64,
+        "note" : 59,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.3269230769230769,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "819A8A24-5F94-4250-B075-9446666522A5",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "5",
+        "labelSize" : 64,
+        "note" : 60,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.39615384615384613,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "033C9170-12AC-45DE-B40A-B9404A4E7888",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "6",
+        "labelSize" : 64,
+        "note" : 61,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.4653846153846154,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "ADC895BB-11D1-4B01-B26C-F9DE73203109",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "7",
+        "labelSize" : 64,
+        "note" : 62,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.5346153846153847,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "806CB233-0611-44E4-B264-46746899007D",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "8",
+        "labelSize" : 64,
+        "note" : 63,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6038461538461539,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "4320C5CB-8A69-457E-9E6D-AD0C53DE5FD0",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "9",
+        "labelSize" : 64,
+        "note" : 64,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6730769230769231,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "B786D36D-E468-4C9D-88D0-B389A9C9CE6F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "10",
+        "labelSize" : 64,
+        "note" : 65,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.7423076923076923,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "19FB0867-2149-4341-AA67-0C5B9D1133F1",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "11",
+        "labelSize" : 64,
+        "note" : 66,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8115384615384617,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 4,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "94D639AA-6C82-4DB0-B1AC-91F2388F414F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "12",
+        "labelSize" : 64,
+        "note" : 67,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8807692307692309,
+        "y" : 0.374
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "BB38F25F-59E3-462E-8ABE-E6F667F15607",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "0",
+        "labelSize" : 64,
+        "note" : 50,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.05,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "A7BB0796-5846-411D-BF3C-2CAAA1830D7F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "1",
+        "labelSize" : 64,
+        "note" : 51,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.11923076923076924,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "6D383166-86AD-4B81-A6EC-886D20D0E074",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "2",
+        "labelSize" : 64,
+        "note" : 52,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.18846153846153846,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "7384B92E-4AE0-4884-AC11-C724F5362718",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "3",
+        "labelSize" : 64,
+        "note" : 53,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.2576923076923077,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "D4AC6228-6365-4E0C-90CD-874F77006897",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "4",
+        "labelSize" : 64,
+        "note" : 54,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.3269230769230769,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "9E55BFD5-3CAD-4BD4-B294-D6246E29571E",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "5",
+        "labelSize" : 64,
+        "note" : 55,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.39615384615384613,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "0695F7A0-B6C2-4E15-82B9-72165AA590F2",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "6",
+        "labelSize" : 64,
+        "note" : 56,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.4653846153846154,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "B53376FC-0120-4A38-8EE4-46E223F75BF4",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "7",
+        "labelSize" : 64,
+        "note" : 57,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.5346153846153847,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "E78A3B3F-F59F-48BD-AB94-25FD4AD0B9F1",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "8",
+        "labelSize" : 64,
+        "note" : 58,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6038461538461539,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "46B5F82A-8AFF-4F4B-8057-6584A517CF75",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "9",
+        "labelSize" : 64,
+        "note" : 59,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6730769230769231,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "7E64D32C-B7B8-4A23-AC4A-D543AB9E5DB8",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "10",
+        "labelSize" : 64,
+        "note" : 60,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.7423076923076923,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "33B6EB9E-A94E-42EC-A801-BFC5105A96A1",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "11",
+        "labelSize" : 64,
+        "note" : 61,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8115384615384617,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 3,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "1AD4C943-DF92-4474-9BC5-0B3D6B80C454",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "12",
+        "labelSize" : 64,
+        "note" : 62,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8807692307692309,
+        "y" : 0.481
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "D6E5D7E5-7785-48FA-8F60-531D36A4DAC0",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "0",
+        "labelSize" : 64,
+        "note" : 45,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.05,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "9AD27FCD-3E9E-40F4-9AD9-58CF6F7D1E33",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "1",
+        "labelSize" : 64,
+        "note" : 46,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.11923076923076924,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "F4A3918A-4324-4E52-8668-7869438FFAA0",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "2",
+        "labelSize" : 64,
+        "note" : 47,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.18846153846153846,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "BAAB90B2-C7D7-4C65-B074-17C80D106840",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "3",
+        "labelSize" : 64,
+        "note" : 48,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.2576923076923077,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "E631E6BD-78FA-4BB7-AC8F-01F4D69351D5",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "4",
+        "labelSize" : 64,
+        "note" : 49,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.3269230769230769,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "BE9BEE96-D17B-4C9B-BF4E-38EC2FAAA3F6",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "5",
+        "labelSize" : 64,
+        "note" : 50,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.39615384615384613,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "501D9222-0888-4E3B-B3B2-A86148BEA2E8",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "6",
+        "labelSize" : 64,
+        "note" : 51,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.4653846153846154,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "CA678F1B-2977-48AD-BCD6-1C171CF8FA74",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "7",
+        "labelSize" : 64,
+        "note" : 52,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.5346153846153847,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "BB974131-8F1F-480C-A7EB-16B72A1F351F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "8",
+        "labelSize" : 64,
+        "note" : 53,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6038461538461539,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "AFE56DFA-B97E-441B-9CD2-707F74183FE0",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "9",
+        "labelSize" : 64,
+        "note" : 54,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6730769230769231,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "3AF25BE7-A91F-4218-AFA5-931890306E98",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "10",
+        "labelSize" : 64,
+        "note" : 55,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.7423076923076923,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "9B7A214D-BE5C-4310-A0D6-A5A91CA52497",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "11",
+        "labelSize" : 64,
+        "note" : 56,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8115384615384617,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 2,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "07863E65-0CE7-47C2-886C-7D396967A3DB",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "12",
+        "labelSize" : 64,
+        "note" : 57,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8807692307692309,
+        "y" : 0.588
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "A2212271-730A-4A96-85B0-FDA666FB003C",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "0",
+        "labelSize" : 64,
+        "note" : 40,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.05,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "A31ED8E0-60FF-4B21-A02F-265CBA2DD1F6",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "1",
+        "labelSize" : 64,
+        "note" : 41,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.11923076923076924,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "E57B3B59-3001-47D4-A459-BDED840ADCB2",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "2",
+        "labelSize" : 64,
+        "note" : 42,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.18846153846153846,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "9A872F52-A112-464C-AC3A-546AA29224BD",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "3",
+        "labelSize" : 64,
+        "note" : 43,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.2576923076923077,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "6056564D-284A-4BF1-8D30-9CC5D26F8699",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "4",
+        "labelSize" : 64,
+        "note" : 44,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.3269230769230769,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "B8532E92-B8F4-47C7-B998-A78A3A061EF2",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "5",
+        "labelSize" : 64,
+        "note" : 45,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.39615384615384613,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "872B4889-E840-4F43-89C9-D93E54C5C92F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "6",
+        "labelSize" : 64,
+        "note" : 46,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.4653846153846154,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "0F8C69E2-9089-4BB3-A359-D1475D485643",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "7",
+        "labelSize" : 64,
+        "note" : 47,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.5346153846153847,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "A443477A-84E3-4310-9208-F3C6225926A0",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "8",
+        "labelSize" : 64,
+        "note" : 48,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6038461538461539,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "B1217AC9-29B7-48E7-85A4-6A5D901FA9AD",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "9",
+        "labelSize" : 64,
+        "note" : 49,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.6730769230769231,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "F3ED4BC5-BAB1-48AA-8DE1-0DFBF691F251",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "10",
+        "labelSize" : 64,
+        "note" : 50,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.7423076923076923,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "212B916C-165E-479C-86E4-2E439090BD47",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "11",
+        "labelSize" : 64,
+        "note" : 51,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8115384615384617,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.095,
+        "id" : "953CAFBE-86B2-4F86-809F-CFFBEE7ED8E9",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "12",
+        "labelSize" : 64,
+        "note" : 52,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.062307692307692314,
+        "x" : 0.8807692307692309,
+        "y" : 0.6950000000000001
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.22745098039215686,
+          "green" : 0.19215686274509805,
+          "opacity" : 1,
+          "red" : 0.14901960784313725
+        },
+        "height" : 0.12,
+        "id" : "4FCEC004-1490-43C8-9A5B-C61312DAFD4E",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "sustain",
+        "label" : "Sustain",
+        "labelSize" : 64,
+        "note" : 0,
+        "rotation" : 0,
+        "shape" : "rounded",
+        "value" : 64,
+        "width" : 0.32,
+        "x" : 0.08,
+        "y" : 0.84
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.1568627450980392,
+          "green" : 0.1568627450980392,
+          "opacity" : 1,
+          "red" : 0.39215686274509803
+        },
+        "height" : 0.12,
+        "id" : "86DD3FBE-AD95-40A9-84BE-077C47FD9A7F",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "panic",
+        "label" : "Panic",
+        "labelSize" : 64,
+        "note" : 0,
+        "rotation" : 0,
+        "shape" : "rounded",
+        "value" : 64,
+        "width" : 0.2,
+        "x" : 0.72,
+        "y" : 0.84
+      }
+    ],
+    "name" : "Editable Fretboard",
+    "showLabels" : true,
+    "snapGrid" : {
+      "height" : 0.535,
+      "width" : 0.9,
+      "x" : 0.05,
+      "y" : 0.16
+    },
+    "snapToGrid" : true
+  },
+  "presets" : [
+    {
+      "accelFloor" : 0,
+      "accelMax" : 1,
+      "accelSensitivity" : 2,
+      "baseOctave" : 4,
+      "cc1Number" : 1,
+      "cc1Visible" : true,
+      "cc2Number" : 74,
+      "cc2Visible" : false,
+      "customLayout" : {
+        "flipHorizontal" : false,
+        "gridColumns" : 13,
+        "gridRows" : 5,
+        "id" : "40975617-7D56-4C05-BC6D-35F58CCBA51E",
+        "items" : [
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "C34D1835-9C46-4861-BD0B-CDB299009C43",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "0",
+            "labelSize" : 64,
+            "note" : 64,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.05,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "1CCEB794-1DB7-459C-A3F4-D4F4CE5801BF",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "1",
+            "labelSize" : 64,
+            "note" : 65,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.11923076923076924,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "BC948B66-63F2-4CD2-9368-2CD46609C0A0",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "2",
+            "labelSize" : 64,
+            "note" : 66,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.18846153846153846,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "91DE6CBC-462A-4CE0-8914-E047C16BC64E",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "3",
+            "labelSize" : 64,
+            "note" : 67,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.2576923076923077,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "0B478C9D-95EF-437E-9E83-925939A5527F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "4",
+            "labelSize" : 64,
+            "note" : 68,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.3269230769230769,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "5745D0BF-7CA1-4558-AF90-51BB5A8FBD7F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "5",
+            "labelSize" : 64,
+            "note" : 69,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.39615384615384613,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "487F13FE-2C82-4D51-AF88-D36E0852C52B",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "6",
+            "labelSize" : 64,
+            "note" : 70,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.4653846153846154,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "94665FBE-6F53-472A-A35A-DFEAB26CBCCB",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "7",
+            "labelSize" : 64,
+            "note" : 71,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.5346153846153847,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "1ED605D9-79D9-41CC-90DC-A39E1ADE31BE",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "8",
+            "labelSize" : 64,
+            "note" : 72,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6038461538461539,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "B87B45A8-8E42-41BF-ABA5-A2EEDB8535F2",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "9",
+            "labelSize" : 64,
+            "note" : 73,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6730769230769231,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "8122DACA-4C26-4069-80C0-154E00E63873",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "10",
+            "labelSize" : 64,
+            "note" : 74,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.7423076923076923,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "C5679514-2CB1-4B94-A8C6-C33415B5F2D1",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "11",
+            "labelSize" : 64,
+            "note" : 75,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8115384615384617,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 6,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "FD7CD4A8-7C13-4E8C-B624-E057DA415FB0",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "12",
+            "labelSize" : 64,
+            "note" : 76,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8807692307692309,
+            "y" : 0.16
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "5D329876-537F-4AF6-A512-DE83B44812BD",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "0",
+            "labelSize" : 64,
+            "note" : 59,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.05,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "181790CE-4A29-4C7D-8F22-EEB8213EAE1E",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "1",
+            "labelSize" : 64,
+            "note" : 60,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.11923076923076924,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "814EAD55-8191-494B-AF83-BAEAA0F86273",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "2",
+            "labelSize" : 64,
+            "note" : 61,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.18846153846153846,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "6AAA4B35-0EF8-4FF3-BF34-AF5000DF2A4F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "3",
+            "labelSize" : 64,
+            "note" : 62,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.2576923076923077,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "C12EA282-BA91-458B-995E-F5D51CF6889B",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "4",
+            "labelSize" : 64,
+            "note" : 63,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.3269230769230769,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "1640CFAF-DEDE-4FC0-B689-BFE5F413C7BF",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "5",
+            "labelSize" : 64,
+            "note" : 64,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.39615384615384613,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "5CF88A5D-AD93-4FEB-9E01-6877C564C882",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "6",
+            "labelSize" : 64,
+            "note" : 65,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.4653846153846154,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "166C5365-A068-4DA5-80A7-7C2EBE1BA596",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "7",
+            "labelSize" : 64,
+            "note" : 66,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.5346153846153847,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "4E3B2FB1-53F7-44A4-B8FC-9F35F2E78F21",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "8",
+            "labelSize" : 64,
+            "note" : 67,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6038461538461539,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "1F7392C3-4F7F-492C-AD0E-A9A3BF56E2BD",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "9",
+            "labelSize" : 64,
+            "note" : 68,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6730769230769231,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "C3742D23-7044-45A2-B1E2-08164D98E1BE",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "10",
+            "labelSize" : 64,
+            "note" : 69,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.7423076923076923,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "38F5595F-F678-4544-B4A9-AF43865BA18F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "11",
+            "labelSize" : 64,
+            "note" : 70,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8115384615384617,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 5,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "A5F28E02-CFBA-4EAD-9F29-EBB6CC793842",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "12",
+            "labelSize" : 64,
+            "note" : 71,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8807692307692309,
+            "y" : 0.267
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "ABFFC50D-2DF9-48B2-9A94-44E7915D95B6",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "0",
+            "labelSize" : 64,
+            "note" : 55,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.05,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "F189EFE0-8CD9-4941-A217-A3298DD3C654",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "1",
+            "labelSize" : 64,
+            "note" : 56,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.11923076923076924,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "498AA331-280F-4D36-9C33-A74E3051F11D",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "2",
+            "labelSize" : 64,
+            "note" : 57,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.18846153846153846,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "7A215DD2-10F8-466B-985F-942DF9BC40CF",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "3",
+            "labelSize" : 64,
+            "note" : 58,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.2576923076923077,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "61B8F659-46EB-4F6F-A92D-AC81D2DD7A29",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "4",
+            "labelSize" : 64,
+            "note" : 59,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.3269230769230769,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "819A8A24-5F94-4250-B075-9446666522A5",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "5",
+            "labelSize" : 64,
+            "note" : 60,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.39615384615384613,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "033C9170-12AC-45DE-B40A-B9404A4E7888",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "6",
+            "labelSize" : 64,
+            "note" : 61,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.4653846153846154,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "ADC895BB-11D1-4B01-B26C-F9DE73203109",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "7",
+            "labelSize" : 64,
+            "note" : 62,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.5346153846153847,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "806CB233-0611-44E4-B264-46746899007D",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "8",
+            "labelSize" : 64,
+            "note" : 63,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6038461538461539,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "4320C5CB-8A69-457E-9E6D-AD0C53DE5FD0",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "9",
+            "labelSize" : 64,
+            "note" : 64,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6730769230769231,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "B786D36D-E468-4C9D-88D0-B389A9C9CE6F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "10",
+            "labelSize" : 64,
+            "note" : 65,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.7423076923076923,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "19FB0867-2149-4341-AA67-0C5B9D1133F1",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "11",
+            "labelSize" : 64,
+            "note" : 66,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8115384615384617,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 4,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "94D639AA-6C82-4DB0-B1AC-91F2388F414F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "12",
+            "labelSize" : 64,
+            "note" : 67,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8807692307692309,
+            "y" : 0.374
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "BB38F25F-59E3-462E-8ABE-E6F667F15607",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "0",
+            "labelSize" : 64,
+            "note" : 50,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.05,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "A7BB0796-5846-411D-BF3C-2CAAA1830D7F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "1",
+            "labelSize" : 64,
+            "note" : 51,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.11923076923076924,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "6D383166-86AD-4B81-A6EC-886D20D0E074",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "2",
+            "labelSize" : 64,
+            "note" : 52,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.18846153846153846,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "7384B92E-4AE0-4884-AC11-C724F5362718",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "3",
+            "labelSize" : 64,
+            "note" : 53,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.2576923076923077,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "D4AC6228-6365-4E0C-90CD-874F77006897",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "4",
+            "labelSize" : 64,
+            "note" : 54,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.3269230769230769,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "9E55BFD5-3CAD-4BD4-B294-D6246E29571E",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "5",
+            "labelSize" : 64,
+            "note" : 55,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.39615384615384613,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "0695F7A0-B6C2-4E15-82B9-72165AA590F2",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "6",
+            "labelSize" : 64,
+            "note" : 56,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.4653846153846154,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "B53376FC-0120-4A38-8EE4-46E223F75BF4",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "7",
+            "labelSize" : 64,
+            "note" : 57,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.5346153846153847,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "E78A3B3F-F59F-48BD-AB94-25FD4AD0B9F1",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "8",
+            "labelSize" : 64,
+            "note" : 58,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6038461538461539,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "46B5F82A-8AFF-4F4B-8057-6584A517CF75",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "9",
+            "labelSize" : 64,
+            "note" : 59,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6730769230769231,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "7E64D32C-B7B8-4A23-AC4A-D543AB9E5DB8",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "10",
+            "labelSize" : 64,
+            "note" : 60,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.7423076923076923,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "33B6EB9E-A94E-42EC-A801-BFC5105A96A1",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "11",
+            "labelSize" : 64,
+            "note" : 61,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8115384615384617,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 3,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "1AD4C943-DF92-4474-9BC5-0B3D6B80C454",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "12",
+            "labelSize" : 64,
+            "note" : 62,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8807692307692309,
+            "y" : 0.481
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "D6E5D7E5-7785-48FA-8F60-531D36A4DAC0",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "0",
+            "labelSize" : 64,
+            "note" : 45,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.05,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "9AD27FCD-3E9E-40F4-9AD9-58CF6F7D1E33",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "1",
+            "labelSize" : 64,
+            "note" : 46,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.11923076923076924,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "F4A3918A-4324-4E52-8668-7869438FFAA0",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "2",
+            "labelSize" : 64,
+            "note" : 47,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.18846153846153846,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "BAAB90B2-C7D7-4C65-B074-17C80D106840",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "3",
+            "labelSize" : 64,
+            "note" : 48,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.2576923076923077,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "E631E6BD-78FA-4BB7-AC8F-01F4D69351D5",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "4",
+            "labelSize" : 64,
+            "note" : 49,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.3269230769230769,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "BE9BEE96-D17B-4C9B-BF4E-38EC2FAAA3F6",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "5",
+            "labelSize" : 64,
+            "note" : 50,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.39615384615384613,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "501D9222-0888-4E3B-B3B2-A86148BEA2E8",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "6",
+            "labelSize" : 64,
+            "note" : 51,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.4653846153846154,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "CA678F1B-2977-48AD-BCD6-1C171CF8FA74",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "7",
+            "labelSize" : 64,
+            "note" : 52,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.5346153846153847,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "BB974131-8F1F-480C-A7EB-16B72A1F351F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "8",
+            "labelSize" : 64,
+            "note" : 53,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6038461538461539,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "AFE56DFA-B97E-441B-9CD2-707F74183FE0",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "9",
+            "labelSize" : 64,
+            "note" : 54,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6730769230769231,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "3AF25BE7-A91F-4218-AFA5-931890306E98",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "10",
+            "labelSize" : 64,
+            "note" : 55,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.7423076923076923,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "9B7A214D-BE5C-4310-A0D6-A5A91CA52497",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "11",
+            "labelSize" : 64,
+            "note" : 56,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8115384615384617,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 2,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "07863E65-0CE7-47C2-886C-7D396967A3DB",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "12",
+            "labelSize" : 64,
+            "note" : 57,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8807692307692309,
+            "y" : 0.588
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "A2212271-730A-4A96-85B0-FDA666FB003C",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "0",
+            "labelSize" : 64,
+            "note" : 40,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.05,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "A31ED8E0-60FF-4B21-A02F-265CBA2DD1F6",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "1",
+            "labelSize" : 64,
+            "note" : 41,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.11923076923076924,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "E57B3B59-3001-47D4-A459-BDED840ADCB2",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "2",
+            "labelSize" : 64,
+            "note" : 42,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.18846153846153846,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "9A872F52-A112-464C-AC3A-546AA29224BD",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "3",
+            "labelSize" : 64,
+            "note" : 43,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.2576923076923077,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "6056564D-284A-4BF1-8D30-9CC5D26F8699",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "4",
+            "labelSize" : 64,
+            "note" : 44,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.3269230769230769,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "B8532E92-B8F4-47C7-B998-A78A3A061EF2",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "5",
+            "labelSize" : 64,
+            "note" : 45,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.39615384615384613,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "872B4889-E840-4F43-89C9-D93E54C5C92F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "6",
+            "labelSize" : 64,
+            "note" : 46,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.4653846153846154,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "0F8C69E2-9089-4BB3-A359-D1475D485643",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "7",
+            "labelSize" : 64,
+            "note" : 47,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.5346153846153847,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "A443477A-84E3-4310-9208-F3C6225926A0",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "8",
+            "labelSize" : 64,
+            "note" : 48,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6038461538461539,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "B1217AC9-29B7-48E7-85A4-6A5D901FA9AD",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "9",
+            "labelSize" : 64,
+            "note" : 49,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.6730769230769231,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "F3ED4BC5-BAB1-48AA-8DE1-0DFBF691F251",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "10",
+            "labelSize" : 64,
+            "note" : 50,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.7423076923076923,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "212B916C-165E-479C-86E4-2E439090BD47",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "11",
+            "labelSize" : 64,
+            "note" : 51,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8115384615384617,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.095,
+            "id" : "953CAFBE-86B2-4F86-809F-CFFBEE7ED8E9",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "12",
+            "labelSize" : 64,
+            "note" : 52,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.062307692307692314,
+            "x" : 0.8807692307692309,
+            "y" : 0.6950000000000001
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.22745098039215686,
+              "green" : 0.19215686274509805,
+              "opacity" : 1,
+              "red" : 0.14901960784313725
+            },
+            "height" : 0.12,
+            "id" : "4FCEC004-1490-43C8-9A5B-C61312DAFD4E",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "sustain",
+            "label" : "Sustain",
+            "labelSize" : 64,
+            "note" : 0,
+            "rotation" : 0,
+            "shape" : "rounded",
+            "value" : 64,
+            "width" : 0.32,
+            "x" : 0.08,
+            "y" : 0.84
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.1568627450980392,
+              "green" : 0.1568627450980392,
+              "opacity" : 1,
+              "red" : 0.39215686274509803
+            },
+            "height" : 0.12,
+            "id" : "86DD3FBE-AD95-40A9-84BE-077C47FD9A7F",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "panic",
+            "label" : "Panic",
+            "labelSize" : 64,
+            "note" : 0,
+            "rotation" : 0,
+            "shape" : "rounded",
+            "value" : 64,
+            "width" : 0.2,
+            "x" : 0.72,
+            "y" : 0.84
+          }
+        ],
+        "name" : "Editable Fretboard",
+        "showLabels" : true,
+        "snapGrid" : {
+          "height" : 0.535,
+          "width" : 0.9,
+          "x" : 0.05,
+          "y" : 0.16
+        },
+        "snapToGrid" : true
+      },
+      "drumColumns" : 12,
+      "drumCymbalCount" : 4,
+      "drumCymbalRows" : 1,
+      "drumFlip" : true,
+      "drumMap" : [
+        36,
+        38,
+        42,
+        46,
+        41,
+        43,
+        45,
+        47,
+        48,
+        50,
+        49,
+        51,
+        55,
+        57,
+        39,
+        37
+      ],
+      "drumRows" : 6,
+      "drumTomCount" : 6,
+      "drumTomRows" : 2,
+      "fretCount" : 13,
+      "id" : "B7FCFEC6-8F24-4E49-BFA4-C766E0ECF544",
+      "keyPadCCDown" : 83,
+      "keyPadCCI" : 84,
+      "keyPadCCLeft" : 80,
+      "keyPadCCRight" : 81,
+      "keyPadCCUp" : 82,
+      "keyPadEditMode" : false,
+      "keyPadPressValue" : 127,
+      "keyPads" : [
+        {
+          "cc" : 80,
+          "height" : 0.6,
+          "id" : "EBFCF2E0-E759-4204-B2BA-0F15732A56C3",
+          "label" : "←",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.05,
+          "y" : 0.2
+        },
+        {
+          "cc" : 81,
+          "height" : 0.6,
+          "id" : "A69D156E-F0C2-439E-A4E1-5B47817D5B74",
+          "label" : "→",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.245,
+          "y" : 0.2
+        },
+        {
+          "cc" : 83,
+          "height" : 0.6,
+          "id" : "FE36B00C-AB9C-4C25-9BD4-C3C1A91B4888",
+          "label" : "↓",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.44,
+          "y" : 0.2
+        },
+        {
+          "cc" : 82,
+          "height" : 0.6,
+          "id" : "5E50FD9C-10A4-41DB-999C-1088E33E713B",
+          "label" : "↑",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.635,
+          "y" : 0.2
+        },
+        {
+          "cc" : 84,
+          "height" : 0.6,
+          "id" : "FF2A66D1-F5E8-4A78-A9B3-DE6A25B037B6",
+          "label" : "i",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.8300000000000001,
+          "y" : 0.2
+        }
+      ],
+      "keyboardOctaves" : 2,
+      "keyboardRows" : 2,
+      "layout" : "fretboard",
+      "midiChannel" : 1,
+      "motionCC" : 1,
+      "motionToCC" : false,
+      "name" : "Darkness Octo",
+      "noteRepeatEnabled" : false,
+      "noteRepeatSubdivision" : 4,
+      "noteRepeatSwing" : 0,
+      "noteRepeatSwingSubdivision" : 2,
+      "noteRepeatTempo" : 120,
+      "pitchBendEnabled" : false,
+      "pitchBendRange" : 12,
+      "quickCCNumbers" : [
+        1
+      ],
+      "quickCCVisibleCount" : 1,
+      "rootNote" : 0,
+      "scale" : "minorPentatonic",
+      "showMacKeyPads" : true,
+      "showNoteRepeatControls" : false,
+      "stringChannels" : [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "stringTunings" : [
+        64,
+        59,
+        55,
+        50,
+        45,
+        40
+      ],
+      "sustainMode" : "hold",
+      "theme" : {
+        "accent" : {
+          "blue" : 1,
+          "green" : 0.48627450980392156,
+          "opacity" : 1,
+          "red" : 0.6078431372549019
+        },
+        "activeGlow" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.7,
+          "red" : 1
+        },
+        "activePad" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 1,
+          "red" : 1
+        },
+        "background" : {
+          "blue" : 0,
+          "green" : 0,
+          "opacity" : 1,
+          "red" : 0
+        },
+        "colorMode" : "custom",
+        "controlFill" : "solid",
+        "glowOnTouch" : false,
+        "gradientBottom" : {
+          "blue" : 0.41568627450980394,
+          "green" : 0.7019607843137254,
+          "opacity" : 1,
+          "red" : 1
+        },
+        "gradientTop" : {
+          "blue" : 1,
+          "green" : 0.9019607843137255,
+          "opacity" : 1,
+          "red" : 0.43137254901960786
+        },
+        "hueBackgroundDrift" : 0.35,
+        "hueBlendIntensity" : 0.45,
+        "huePadAmount" : 180,
+        "hueShift" : false,
+        "hueShiftAmount" : 360,
+        "hueShiftSpeed" : 10,
+        "markerColor" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.7,
+          "red" : 1
+        },
+        "markerMode" : "edges",
+        "markerOffset" : -80,
+        "markerShape" : "dot",
+        "pad" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "padBorder" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.8,
+          "red" : 1
+        },
+        "padBorderWidth" : 2.5,
+        "padFillMode" : "solid",
+        "padGap" : 8,
+        "padGlow" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.25,
+          "red" : 1
+        },
+        "panel" : {
+          "blue" : 0.04,
+          "green" : 0.04,
+          "opacity" : 0.78,
+          "red" : 0.04
+        },
+        "pulseGlow" : false,
+        "rootBorder" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.8,
+          "red" : 1
+        },
+        "rowGap" : 7,
+        "scaleOnTouch" : true,
+        "scalePad" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "shape" : "octagon",
+        "showNoteNames" : false
+      },
+      "touchForceSensitivity" : 0,
+      "velocity" : 104,
+      "velocityCurve" : "soft",
+      "velocityMax" : 127,
+      "velocityMin" : 1,
+      "velocityMode" : "accelerometer",
+      "vibratoDepth" : 0.2,
+      "vibratoEnabled" : false,
+      "vibratoRate" : 6
+    }
+  ],
+  "type" : "midivana-native-preset"
+}

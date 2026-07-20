@@ -1,0 +1,747 @@
+{
+  "layout" : {
+    "flipHorizontal" : false,
+    "gridColumns" : 12,
+    "gridRows" : 8,
+    "id" : "772ECE88-77BD-460B-8E12-562C7E48CCDE",
+    "items" : [
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.18,
+        "id" : "E661F2FA-5F78-47DA-B73B-65A6689EB2B1",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 36,
+        "rotation" : 0,
+        "shape" : "octagon",
+        "value" : 64,
+        "width" : 0.16,
+        "x" : 0.16666666666666666,
+        "y" : 0.625
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.18,
+        "id" : "4ACBA0F7-5F64-4330-956F-80CB137A1311",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 37,
+        "rotation" : 0,
+        "shape" : "octagon",
+        "value" : 64,
+        "width" : 0.16,
+        "x" : 0.3333333333333333,
+        "y" : 0.625
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.18,
+        "id" : "C7A467C7-43E4-4EBD-9F53-47C6D14B69B9",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 38,
+        "rotation" : 0,
+        "shape" : "octagon",
+        "value" : 64,
+        "width" : 0.16,
+        "x" : 0.5,
+        "y" : 0.625
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.18,
+        "id" : "E9387F54-CEF7-4B05-B161-C9BF8CF396A5",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 39,
+        "rotation" : 0,
+        "shape" : "octagon",
+        "value" : 64,
+        "width" : 0.16,
+        "x" : 0.6666666666666666,
+        "y" : 0.625
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.18,
+        "id" : "B4BAF323-0D30-4C9E-BF3D-079D9A2EB59A",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 40,
+        "rotation" : 0,
+        "shape" : "octagon",
+        "value" : 64,
+        "width" : 0.16,
+        "x" : 0.6666666666666666,
+        "y" : 0.375
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.18,
+        "id" : "EA3A9052-8A5B-4106-A46B-B20FE0CBF395",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 41,
+        "rotation" : 0,
+        "shape" : "octagon",
+        "value" : 64,
+        "width" : 0.16,
+        "x" : 0.5,
+        "y" : 0.375
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.18,
+        "id" : "EA6C1E8E-E422-42CC-A670-FC0851461200",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 42,
+        "rotation" : 0,
+        "shape" : "octagon",
+        "value" : 64,
+        "width" : 0.16,
+        "x" : 0.3333333333333333,
+        "y" : 0.375
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.18,
+        "id" : "150031CC-E5ED-4196-A677-D2936EEEF1B2",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 43,
+        "rotation" : 0,
+        "shape" : "octagon",
+        "value" : 64,
+        "width" : 0.16,
+        "x" : 0.16666666666666666,
+        "y" : 0.375
+      }
+    ],
+    "name" : "Blank Grid",
+    "showLabels" : false,
+    "snapGrid" : {
+      "height" : 1,
+      "width" : 1,
+      "x" : 0,
+      "y" : 0
+    },
+    "snapToGrid" : true
+  },
+  "presets" : [
+    {
+      "accelFloor" : 0,
+      "accelMax" : 1,
+      "accelSensitivity" : 2,
+      "baseOctave" : 3,
+      "cc1Number" : 1,
+      "cc1Visible" : true,
+      "cc2Number" : 74,
+      "cc2Visible" : false,
+      "customLayout" : {
+        "flipHorizontal" : false,
+        "gridColumns" : 12,
+        "gridRows" : 8,
+        "id" : "772ECE88-77BD-460B-8E12-562C7E48CCDE",
+        "items" : [
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.18,
+            "id" : "E661F2FA-5F78-47DA-B73B-65A6689EB2B1",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 36,
+            "rotation" : 0,
+            "shape" : "octagon",
+            "value" : 64,
+            "width" : 0.16,
+            "x" : 0.16666666666666666,
+            "y" : 0.625
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.18,
+            "id" : "4ACBA0F7-5F64-4330-956F-80CB137A1311",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 37,
+            "rotation" : 0,
+            "shape" : "octagon",
+            "value" : 64,
+            "width" : 0.16,
+            "x" : 0.3333333333333333,
+            "y" : 0.625
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.18,
+            "id" : "C7A467C7-43E4-4EBD-9F53-47C6D14B69B9",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 38,
+            "rotation" : 0,
+            "shape" : "octagon",
+            "value" : 64,
+            "width" : 0.16,
+            "x" : 0.5,
+            "y" : 0.625
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.18,
+            "id" : "E9387F54-CEF7-4B05-B161-C9BF8CF396A5",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 39,
+            "rotation" : 0,
+            "shape" : "octagon",
+            "value" : 64,
+            "width" : 0.16,
+            "x" : 0.6666666666666666,
+            "y" : 0.625
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.18,
+            "id" : "B4BAF323-0D30-4C9E-BF3D-079D9A2EB59A",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 40,
+            "rotation" : 0,
+            "shape" : "octagon",
+            "value" : 64,
+            "width" : 0.16,
+            "x" : 0.6666666666666666,
+            "y" : 0.375
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.18,
+            "id" : "EA3A9052-8A5B-4106-A46B-B20FE0CBF395",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 41,
+            "rotation" : 0,
+            "shape" : "octagon",
+            "value" : 64,
+            "width" : 0.16,
+            "x" : 0.5,
+            "y" : 0.375
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.18,
+            "id" : "EA6C1E8E-E422-42CC-A670-FC0851461200",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 42,
+            "rotation" : 0,
+            "shape" : "octagon",
+            "value" : 64,
+            "width" : 0.16,
+            "x" : 0.3333333333333333,
+            "y" : 0.375
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.18,
+            "id" : "150031CC-E5ED-4196-A677-D2936EEEF1B2",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 43,
+            "rotation" : 0,
+            "shape" : "octagon",
+            "value" : 64,
+            "width" : 0.16,
+            "x" : 0.16666666666666666,
+            "y" : 0.375
+          }
+        ],
+        "name" : "Blank Grid",
+        "showLabels" : false,
+        "snapGrid" : {
+          "height" : 1,
+          "width" : 1,
+          "x" : 0,
+          "y" : 0
+        },
+        "snapToGrid" : true
+      },
+      "drumColumns" : 12,
+      "drumCymbalCount" : 4,
+      "drumCymbalRows" : 1,
+      "drumFlip" : true,
+      "drumMap" : [
+        36,
+        38,
+        42,
+        46,
+        41,
+        43,
+        45,
+        47,
+        48,
+        50,
+        49,
+        51,
+        55,
+        57,
+        39,
+        37
+      ],
+      "drumRows" : 6,
+      "drumTomCount" : 6,
+      "drumTomRows" : 2,
+      "fretCount" : 13,
+      "id" : "9431D7FC-C841-4289-AA10-BB8459B23529",
+      "keyPadCCDown" : 83,
+      "keyPadCCI" : 84,
+      "keyPadCCLeft" : 80,
+      "keyPadCCRight" : 81,
+      "keyPadCCUp" : 82,
+      "keyPadEditMode" : false,
+      "keyPadPressValue" : 127,
+      "keyPads" : [
+        {
+          "cc" : 80,
+          "height" : 0.6,
+          "id" : "EBFCF2E0-E759-4204-B2BA-0F15732A56C3",
+          "label" : "←",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.05,
+          "y" : 0.2
+        },
+        {
+          "cc" : 81,
+          "height" : 0.6,
+          "id" : "A69D156E-F0C2-439E-A4E1-5B47817D5B74",
+          "label" : "→",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.245,
+          "y" : 0.2
+        },
+        {
+          "cc" : 83,
+          "height" : 0.6,
+          "id" : "FE36B00C-AB9C-4C25-9BD4-C3C1A91B4888",
+          "label" : "↓",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.44,
+          "y" : 0.2
+        },
+        {
+          "cc" : 82,
+          "height" : 0.6,
+          "id" : "5E50FD9C-10A4-41DB-999C-1088E33E713B",
+          "label" : "↑",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.635,
+          "y" : 0.2
+        },
+        {
+          "cc" : 84,
+          "height" : 0.6,
+          "id" : "FF2A66D1-F5E8-4A78-A9B3-DE6A25B037B6",
+          "label" : "i",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.8300000000000001,
+          "y" : 0.2
+        }
+      ],
+      "keyboardOctaves" : 2,
+      "keyboardRows" : 2,
+      "layout" : "custom",
+      "midiChannel" : 1,
+      "motionCC" : 1,
+      "motionToCC" : false,
+      "name" : "XO !",
+      "noteRepeatEnabled" : false,
+      "noteRepeatSubdivision" : 4,
+      "noteRepeatSwing" : 0,
+      "noteRepeatSwingSubdivision" : 2,
+      "noteRepeatTempo" : 120,
+      "pitchBendEnabled" : false,
+      "pitchBendRange" : 12,
+      "quickCCNumbers" : [
+        1
+      ],
+      "quickCCVisibleCount" : 1,
+      "rootNote" : 0,
+      "scale" : "minorPentatonic",
+      "showMacKeyPads" : true,
+      "showNoteRepeatControls" : false,
+      "stringChannels" : [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "stringTunings" : [
+        64,
+        59,
+        55,
+        50,
+        45,
+        40
+      ],
+      "sustainMode" : "hold",
+      "theme" : {
+        "accent" : {
+          "blue" : 1,
+          "green" : 0.48627450980392156,
+          "opacity" : 1,
+          "red" : 0.6078431372549019
+        },
+        "activeGlow" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.7,
+          "red" : 1
+        },
+        "activePad" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 1,
+          "red" : 1
+        },
+        "background" : {
+          "blue" : 0,
+          "green" : 0,
+          "opacity" : 1,
+          "red" : 0
+        },
+        "colorMode" : "custom",
+        "controlFill" : "solid",
+        "glowOnTouch" : false,
+        "gradientBottom" : {
+          "blue" : 0.41568627450980394,
+          "green" : 0.7019607843137254,
+          "opacity" : 1,
+          "red" : 1
+        },
+        "gradientTop" : {
+          "blue" : 1,
+          "green" : 0.9019607843137255,
+          "opacity" : 1,
+          "red" : 0.43137254901960786
+        },
+        "hueBackgroundDrift" : 0.35,
+        "hueBlendIntensity" : 0.45,
+        "huePadAmount" : 180,
+        "hueShift" : false,
+        "hueShiftAmount" : 360,
+        "hueShiftSpeed" : 10,
+        "markerColor" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.7,
+          "red" : 1
+        },
+        "markerMode" : "edges",
+        "markerOffset" : -80,
+        "markerShape" : "dot",
+        "pad" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "padBorder" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.8,
+          "red" : 1
+        },
+        "padBorderWidth" : 2.5,
+        "padFillMode" : "solid",
+        "padGap" : 8,
+        "padGlow" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.25,
+          "red" : 1
+        },
+        "panel" : {
+          "blue" : 0.04,
+          "green" : 0.04,
+          "opacity" : 0.78,
+          "red" : 0.04
+        },
+        "pulseGlow" : false,
+        "rootBorder" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.8,
+          "red" : 1
+        },
+        "rowGap" : 7,
+        "scaleOnTouch" : true,
+        "scalePad" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "shape" : "octagon",
+        "showNoteNames" : false
+      },
+      "touchForceSensitivity" : 0,
+      "velocity" : 104,
+      "velocityCurve" : "soft",
+      "velocityMax" : 127,
+      "velocityMin" : 1,
+      "velocityMode" : "accelerometer",
+      "vibratoDepth" : 0.2,
+      "vibratoEnabled" : false,
+      "vibratoRate" : 6
+    }
+  ],
+  "type" : "midivana-native-preset"
+}

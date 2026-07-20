@@ -14,6 +14,7 @@ struct SettingsSheet: View {
   @State private var isExporting = false
   @State private var exportDocument = JSONTextDocument()
   @State private var importError: String?
+  @State private var presetPendingDeletion: AppPreset?
   var onDone: (() -> Void)?
 
   init(app: AppModel, onDone: (() -> Void)? = nil) {
@@ -35,6 +36,7 @@ struct SettingsSheet: View {
       DisclosureGroup("Expression") { expressionSection }
       DisclosureGroup("Theme") { themeSection }
       DisclosureGroup("Custom Layout") { customLayoutSection }
+      DisclosureGroup("Quick Layout Menu") { quickLayoutMenuSection }
       DisclosureGroup("Presets") { presetsSection }
     }
     .scrollContentBackground(.hidden)
@@ -58,6 +60,22 @@ struct SettingsSheet: View {
         Button("OK", role: .cancel) { importError = nil }
       } message: {
         Text(importError ?? "")
+      }
+      .confirmationDialog(
+        "Delete preset?",
+        isPresented: Binding(get: { presetPendingDeletion != nil }, set: { if !$0 { presetPendingDeletion = nil } }),
+        titleVisibility: .visible
+      ) {
+        if let preset = presetPendingDeletion {
+          Button("Delete \(preset.name)", role: .destructive) {
+            app.delete(preset)
+            presetName = app.preset.name
+            presetPendingDeletion = nil
+          }
+        }
+        Button("Cancel", role: .cancel) { presetPendingDeletion = nil }
+      } message: {
+        Text("This removes the saved preset. Removing a layout from the Quick Layout Menu only hides it from that menu.")
       }
     .preferredColorScheme(.dark)
     .presentationDetents([.large])
@@ -128,7 +146,6 @@ struct SettingsSheet: View {
       Stepper("Base octave \(app.preset.baseOctave)", value: $app.preset.baseOctave, in: 1...7)
 
       Toggle("Show Mac key pads", isOn: $app.preset.showMacKeyPads)
-      Toggle("Show note repeat button", isOn: $app.preset.showNoteRepeatControls)
       if app.preset.showMacKeyPads {
         Stepper("Key pad press value \(app.preset.keyPadPressValue)", value: $app.preset.keyPadPressValue, in: 64...127)
         Button {
@@ -443,7 +460,7 @@ struct SettingsSheet: View {
       Button {
         addCustomItem(.keyCommand)
       } label: {
-        Label("Key command", systemImage: "keyboard")
+        Label("CC Key", systemImage: "keyboard")
       }
 
       HStack {
@@ -486,6 +503,13 @@ struct SettingsSheet: View {
           Stepper("Note \(item.note) \(MusicTheory.noteName(item.note))", value: $item.note, in: 0...127)
           Stepper("Channel \(item.channel)", value: $item.channel, in: 1...16)
           Stepper("CC \(item.cc)", value: $item.cc, in: 0...127)
+          if item.kind == .ccSliderX || item.kind == .ccSliderY {
+            Picker("Slider appearance", selection: sliderStyleBinding($item)) {
+              ForEach(CustomSliderStyle.allCases) { style in
+                Text(style.title).tag(style)
+              }
+            }
+          }
           TextField("Key command", text: $item.keyCommand)
 
           Picker("Shape", selection: $item.shape) {
@@ -577,11 +601,53 @@ struct SettingsSheet: View {
           Spacer()
 
           Button(role: .destructive) {
-            app.delete(preset)
+            presetPendingDeletion = preset
           } label: {
             Image(systemName: "trash")
           }
           .buttonStyle(.borderless)
+        }
+      }
+    }
+  }
+
+  private var quickLayoutMenuSection: some View {
+    Section("Quick Layout Menu") {
+      Text("These layouts appear in the grid button at the top right. Rename or remove them here without deleting their saved presets.")
+        .font(.caption)
+        .foregroundStyle(.secondary)
+
+      ForEach(presetStore.quickLayoutPresets) { preset in
+        HStack {
+          TextField("Layout name", text: quickLayoutNameBinding(preset.id))
+            .textInputAutocapitalization(.words)
+
+          Button {
+            presetStore.removeFromQuickLayoutMenu(preset)
+          } label: {
+            Label("Remove", systemImage: "minus.circle")
+          }
+          .buttonStyle(.borderless)
+        }
+      }
+
+      Button {
+        app.addCurrentPresetToQuickLayoutMenu()
+      } label: {
+        Label("Add Current Layout", systemImage: "plus.circle")
+      }
+      .disabled(presetStore.isInQuickLayoutMenu(app.preset))
+
+      let availablePresets = presetStore.presets.filter { !presetStore.isInQuickLayoutMenu($0) }
+      if !availablePresets.isEmpty {
+        Menu {
+          ForEach(availablePresets) { preset in
+            Button(preset.name) {
+              presetStore.addToQuickLayoutMenu(preset)
+            }
+          }
+        } label: {
+          Label("Add Saved Layout", systemImage: "plus.rectangle.on.rectangle")
         }
       }
     }
@@ -592,6 +658,14 @@ struct SettingsSheet: View {
       app.preset.layout
     } set: { newLayout in
       app.setLayout(newLayout)
+    }
+  }
+
+  private func quickLayoutNameBinding(_ presetID: UUID) -> Binding<String> {
+    Binding {
+      presetStore.presets.first(where: { $0.id == presetID })?.name ?? ""
+    } set: { name in
+      app.renameSavedPreset(id: presetID, to: name)
     }
   }
 
@@ -622,6 +696,14 @@ struct SettingsSheet: View {
       app.preset.quickCCNumbers[index] = value.clamped(to: 0...127)
       if index == 0 { app.preset.cc1Number = value.clamped(to: 0...127) }
       if index == 1 { app.preset.cc2Number = value.clamped(to: 0...127) }
+    }
+  }
+
+  private func sliderStyleBinding(_ item: Binding<CustomItem>) -> Binding<CustomSliderStyle> {
+    Binding {
+      item.wrappedValue.sliderStyle ?? .standard
+    } set: { style in
+      item.wrappedValue.sliderStyle = style
     }
   }
 
@@ -669,7 +751,7 @@ struct SettingsSheet: View {
     case .panic: return "Panic"
     case .image: return "Image"
     case .video: return "Video"
-    case .keyCommand: return "Key"
+    case .keyCommand: return "CC Key"
     }
   }
 
@@ -967,7 +1049,7 @@ private struct VelocityRangeSlider: View {
   }
 }
 
-private extension CodableColor {
+extension CodableColor {
   init(_ color: Color) {
     let uiColor = UIColor(color)
     var red: CGFloat = 0

@@ -8,6 +8,7 @@ final class MIDIService: ObservableObject {
   @Published private(set) var lastIncomingMessage: [UInt8] = []
   @Published private(set) var lastOutgoingMessage: [UInt8] = []
   @Published private(set) var externalActiveNotes = Set<ActiveNote>()
+  @Published private(set) var externalActiveControls = Set<ActiveControl>()
 
   private var client = MIDIClientRef()
   private var outputPort = MIDIPortRef()
@@ -175,14 +176,21 @@ final class MIDIService: ObservableObject {
     guard bytes.count >= 3 else { return }
     let status = bytes[0] & 0xF0
     let channel = Int(bytes[0] & 0x0F) + 1
-    let note = Int(bytes[1])
-    let velocity = Int(bytes[2])
-    let active = ActiveNote(note: note, channel: channel)
+    let data1 = Int(bytes[1])
+    let value = Int(bytes[2])
+    let active = ActiveNote(note: data1, channel: channel)
 
-    if status == 0x90 && velocity > 0 {
+    if status == 0x90 && value > 0 {
       externalActiveNotes.insert(active)
-    } else if status == 0x80 || (status == 0x90 && velocity == 0) {
+    } else if status == 0x80 || (status == 0x90 && value == 0) {
       externalActiveNotes.remove(active)
+    } else if status == 0xB0 {
+      let control = ActiveControl(controller: data1, channel: channel)
+      if value > 0 {
+        externalActiveControls.insert(control)
+      } else {
+        externalActiveControls.remove(control)
+      }
     }
   }
 

@@ -12,7 +12,7 @@ struct MidivanaApp: App {
 struct WebContainerView: View {
   var body: some View {
     Group {
-      if let url = Bundle.main.url(forResource: "index", withExtension: "html"),
+      if let url = MidivanaResources.url(named: "index", withExtension: "html"),
          let html = try? String(contentsOf: url, encoding: .utf8) {
         WebView(html: html, baseURL: url.deletingLastPathComponent())
       } else {

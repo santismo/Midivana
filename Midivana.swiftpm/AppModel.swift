@@ -10,7 +10,6 @@ final class AppModel: ObservableObject {
       }
       syncMotion()
       syncVibrato()
-      syncNoteRepeat()
     }
   }
   @Published var selectedOutputID: Int32?
@@ -40,8 +39,6 @@ final class AppModel: ObservableObject {
   private var vibratoPhase = 0.0
   private var activeNoteCounts: [ActiveNote: Int] = [:]
   private var activeNoteVelocities: [ActiveNote: Int] = [:]
-  private var noteRepeatTask: Task<Void, Never>?
-  private var noteRepeatStep = 0
   private var layoutChangeInFlight = false
   private var midiOutputsCancellable: AnyCancellable?
 
@@ -152,6 +149,10 @@ final class AppModel: ObservableObject {
   func isActive(note: Int, channel: Int) -> Bool {
     activeNotes.contains(ActiveNote(note: note, channel: channel))
       || midi.externalActiveNotes.contains(ActiveNote(note: note, channel: channel))
+  }
+
+  func isControlActive(controller: Int, channel: Int) -> Bool {
+    midi.externalActiveControls.contains(ActiveControl(controller: controller, channel: channel))
   }
 
   func press(_ pad: NotePad, touchIntensity: Double? = nil) {
@@ -361,7 +362,6 @@ final class AppModel: ObservableObject {
       }
     }
     stopVibrato()
-    stopNoteRepeat()
   }
 
   private func releaseForLayoutChange() {
@@ -379,7 +379,6 @@ final class AppModel: ObservableObject {
     heldSustainNotes.removeAll()
     sustainButtonActive = false
     stopVibrato()
-    stopNoteRepeat()
   }
 
   private func nextAvailableKeyPadCC() -> Int {
@@ -422,6 +421,21 @@ final class AppModel: ObservableObject {
       }
     }
     presetStore.upsert(preset)
+  }
+
+  func addCurrentPresetToQuickLayoutMenu() {
+    updateCurrentPreset()
+    presetStore.addToQuickLayoutMenu(preset)
+  }
+
+  func renameSavedPreset(id: UUID, to name: String) {
+    presetStore.rename(id, to: name)
+    if preset.id == id {
+      let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
+      if !trimmed.isEmpty {
+        preset.name = trimmed
+      }
+    }
   }
 
   func apply(_ savedPreset: AppPreset) {
@@ -487,7 +501,6 @@ final class AppModel: ObservableObject {
     activeNoteVelocities[active] = velocity
     midi.sendNoteOn(note: note, velocity: velocity, channel: channel, outputID: selectedOutputID)
     syncVibrato()
-    syncNoteRepeat()
   }
 
   private func release(note: Int, channel: Int) {
@@ -519,7 +532,6 @@ final class AppModel: ObservableObject {
     midi.sendNoteOff(note: active.note, channel: active.channel, outputID: selectedOutputID)
     midi.resetPitchBend(channel: active.channel, outputID: selectedOutputID)
     syncVibrato()
-    syncNoteRepeat()
   }
 
   private func releaseSustainedNotes() {
@@ -620,59 +632,6 @@ final class AppModel: ObservableObject {
     }
   }
 
-  private func syncNoteRepeat() {
-    guard preset.noteRepeatEnabled, !activeNotes.isEmpty else {
-      stopNoteRepeat()
-      return
-    }
-    if noteRepeatTask == nil {
-      startNoteRepeat()
-    }
-  }
-
-  private func startNoteRepeat() {
-    noteRepeatTask?.cancel()
-    noteRepeatStep = 0
-    noteRepeatTask = Task { [weak self] in
-      while !Task.isCancelled {
-        guard let self else { return }
-        let interval = await MainActor.run { self.currentRepeatInterval() }
-        try? await Task.sleep(nanoseconds: UInt64(max(0.015, interval) * 1_000_000_000))
-        if Task.isCancelled { return }
-        await MainActor.run {
-          self.fireNoteRepeat()
-        }
-      }
-    }
-  }
-
-  private func stopNoteRepeat() {
-    noteRepeatTask?.cancel()
-    noteRepeatTask = nil
-    noteRepeatStep = 0
-  }
-
-  private func currentRepeatInterval() -> Double {
-    let beat = 60.0 / max(20, min(300, preset.noteRepeatTempo))
-    let base = beat * 4.0 / Double(max(1, preset.noteRepeatSubdivision))
-    let swingAmount = max(0, min(0.85, preset.noteRepeatSwing / 100.0))
-    let swingEvery = max(2, preset.noteRepeatSwingSubdivision)
-    guard swingAmount > 0, noteRepeatStep % swingEvery == swingEvery - 1 else { return base }
-    return base * (1.0 + swingAmount)
-  }
-
-  private func fireNoteRepeat() {
-    guard preset.noteRepeatEnabled, !activeNotes.isEmpty else {
-      stopNoteRepeat()
-      return
-    }
-    noteRepeatStep += 1
-    for active in activeNotes {
-      let velocity = activeNoteVelocities[active] ?? max(1, lastSentVelocity)
-      midi.sendNoteOff(note: active.note, channel: active.channel, outputID: selectedOutputID)
-      midi.sendNoteOn(note: active.note, velocity: velocity, channel: active.channel, outputID: selectedOutputID)
-    }
-  }
 }
 
 private extension Comparable {
