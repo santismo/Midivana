@@ -149,7 +149,21 @@ enum CustomItemKind: String, CaseIterable, Identifiable, Codable {
     case .panic: return "Panic"
     case .image: return "Image"
     case .video: return "Video"
-    case .keyCommand: return "Key"
+    case .keyCommand: return "CC Key"
+    }
+  }
+}
+
+enum CustomSliderStyle: String, CaseIterable, Identifiable, Codable {
+  case standard
+  case spring
+
+  var id: String { rawValue }
+
+  var title: String {
+    switch self {
+    case .standard: return "Standard"
+    case .spring: return "Spring"
     }
   }
 }
@@ -248,6 +262,8 @@ struct CustomItem: Identifiable, Codable, Equatable {
   var keyCommand = "ArrowLeft"
   var labelSize = 64.0
   var rotation = 0.0
+  // Optional so existing layouts and presets continue to decode as the standard slider.
+  var sliderStyle: CustomSliderStyle?
 }
 
 struct MacKeyPad: Identifiable, Codable, Equatable {
@@ -555,12 +571,6 @@ struct AppPreset: Identifiable, Codable, Equatable {
   var vibratoRate = 6.0
   var vibratoDepth = 0.2
   var showMacKeyPads = true
-  var showNoteRepeatControls = true
-  var noteRepeatEnabled = false
-  var noteRepeatTempo = 120.0
-  var noteRepeatSubdivision = 4
-  var noteRepeatSwing = 0.0
-  var noteRepeatSwingSubdivision = 2
   var keyPadPressValue = 127
   var keyPadCCLeft = 80
   var keyPadCCRight = 81
@@ -621,12 +631,6 @@ struct AppPreset: Identifiable, Codable, Equatable {
     vibratoRate = try container.decodeIfPresent(Double.self, forKey: .vibratoRate) ?? defaults.vibratoRate
     vibratoDepth = try container.decodeIfPresent(Double.self, forKey: .vibratoDepth) ?? defaults.vibratoDepth
     showMacKeyPads = try container.decodeIfPresent(Bool.self, forKey: .showMacKeyPads) ?? defaults.showMacKeyPads
-    showNoteRepeatControls = try container.decodeIfPresent(Bool.self, forKey: .showNoteRepeatControls) ?? defaults.showNoteRepeatControls
-    noteRepeatEnabled = try container.decodeIfPresent(Bool.self, forKey: .noteRepeatEnabled) ?? defaults.noteRepeatEnabled
-    noteRepeatTempo = try container.decodeIfPresent(Double.self, forKey: .noteRepeatTempo) ?? defaults.noteRepeatTempo
-    noteRepeatSubdivision = try container.decodeIfPresent(Int.self, forKey: .noteRepeatSubdivision) ?? defaults.noteRepeatSubdivision
-    noteRepeatSwing = try container.decodeIfPresent(Double.self, forKey: .noteRepeatSwing) ?? defaults.noteRepeatSwing
-    noteRepeatSwingSubdivision = try container.decodeIfPresent(Int.self, forKey: .noteRepeatSwingSubdivision) ?? defaults.noteRepeatSwingSubdivision
     keyPadPressValue = try container.decodeIfPresent(Int.self, forKey: .keyPadPressValue) ?? defaults.keyPadPressValue
     keyPadCCLeft = try container.decodeIfPresent(Int.self, forKey: .keyPadCCLeft) ?? defaults.keyPadCCLeft
     keyPadCCRight = try container.decodeIfPresent(Int.self, forKey: .keyPadCCRight) ?? defaults.keyPadCCRight
@@ -678,6 +682,11 @@ struct NotePad: Identifiable, Hashable {
 
 struct ActiveNote: Hashable, Codable {
   let note: Int
+  let channel: Int
+}
+
+struct ActiveControl: Hashable, Codable {
+  let controller: Int
   let channel: Int
 }
 

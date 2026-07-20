@@ -1,0 +1,1373 @@
+{
+  "layout" : {
+    "flipHorizontal" : true,
+    "gridColumns" : 12,
+    "gridRows" : 8,
+    "id" : "C8527DE5-E8DE-41A1-A205-1C3025B9679A",
+    "items" : [
+      {
+        "activeFill" : {
+          "blue" : 0.6119816280299889,
+          "green" : 0.6083830424256267,
+          "opacity" : 1,
+          "red" : 0.3620110050476941
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.1810258767182432,
+          "green" : 0.29471571719570183,
+          "opacity" : 1,
+          "red" : 0.31544302642160416
+        },
+        "height" : 0.08346153846153846,
+        "id" : "199A0327-8CC7-4379-9958-0432CC81D76B",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Crash",
+        "labelSize" : 64,
+        "note" : 49,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.2546784363177806,
+        "x" : 0.02518284993694847,
+        "y" : 0.10759615384615386
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.5431367030703186,
+          "green" : 0.8374769327227083,
+          "opacity" : 1,
+          "red" : 0.5582037525209922
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.23159792942616664,
+          "green" : 0.09032338878059286,
+          "opacity" : 1,
+          "red" : 0.33658635463773323
+        },
+        "height" : 0.08057692307692307,
+        "id" : "287C5DAE-BC09-4D53-B396-B4FC97276E5E",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Ride",
+        "labelSize" : 64,
+        "note" : 51,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.2549936948297604,
+        "x" : 0.16083228247162662,
+        "y" : 0.007115384615384621
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.8275093999935604,
+          "green" : 0.27978766729392934,
+          "opacity" : 1,
+          "red" : 0.7767209890929994
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.34223311716064,
+          "green" : 0.2597064255569148,
+          "opacity" : 1,
+          "red" : 0.18841514064026024
+        },
+        "height" : 0.08173076923076923,
+        "id" : "6516EBCA-C410-4E5A-9706-E7E1F07692CB",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Crash 2",
+        "labelSize" : 64,
+        "note" : 57,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.24049180327868852,
+        "x" : 0.36047919293820946,
+        "y" : 0.1051923076923077
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.5137562423937327,
+          "green" : 0.5112131210832098,
+          "opacity" : 1,
+          "red" : 0.4992514899838558
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.34610446504907244,
+          "green" : 0.1565865646214489,
+          "opacity" : 1,
+          "red" : 0.20237334947354424
+        },
+        "height" : 0.07788461538461539,
+        "id" : "162AF104-0072-4746-BE8B-9DDFAF73B7B5",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Splash",
+        "labelSize" : 64,
+        "note" : 55,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.2441361916771753,
+        "x" : 0.5166204287515762,
+        "y" : 0.010000000000000005
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.7627370693601259,
+          "green" : 0.6875972544078721,
+          "opacity" : 1,
+          "red" : 0.754874886306201
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.026183184217475123,
+          "green" : 0.204583887575303,
+          "opacity" : 1,
+          "red" : 0.0877768142915697
+        },
+        "height" : 0.12,
+        "id" : "5058B5DF-A594-49AF-9F2F-D987C0C08052",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Open Hat",
+        "labelSize" : 64,
+        "note" : 46,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.22,
+        "x" : 0.04,
+        "y" : 0.23
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.5646623392475019,
+          "green" : 0.33599259789200253,
+          "opacity" : 1,
+          "red" : 0.6164527353823099
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.29304060738698107,
+          "green" : 0.12162065022195188,
+          "opacity" : 1,
+          "red" : 0.07297757798526555
+        },
+        "height" : 0.12,
+        "id" : "4B21DDE2-B04B-4DA8-A1BE-47F672DA8393",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Hat",
+        "labelSize" : 64,
+        "note" : 42,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.22,
+        "x" : 0.04000000000000012,
+        "y" : 0.38
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.832103417940335,
+          "green" : 0.4243975722524974,
+          "opacity" : 1,
+          "red" : 0.34573077025252397
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.09631874315964205,
+          "green" : 0.03694817523622741,
+          "opacity" : 1,
+          "red" : 0.33260503291793775
+        },
+        "height" : 0.12519230769230769,
+        "id" : "0D52867B-94C8-43A8-9E04-203DA363C9FA",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Tom 1",
+        "labelSize" : 64,
+        "note" : 50,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.1128499369482976,
+        "x" : 0.28730138713745224,
+        "y" : 0.30673076923076925
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.5442870931947099,
+          "green" : 0.6463547020469708,
+          "opacity" : 1,
+          "red" : 0.5380248734480938
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.2484917726021705,
+          "green" : 0.21709524627968074,
+          "opacity" : 1,
+          "red" : 0.3204742379718288
+        },
+        "height" : 0.13384615384615384,
+        "id" : "D6385C28-961E-427A-B6B8-A1F37CDC31C7",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Tom 2",
+        "labelSize" : 64,
+        "note" : 47,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.14153846153846153,
+        "x" : 0.37097099621689794,
+        "y" : 0.3581730769230769
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.3420451282367023,
+          "green" : 0.29614169691065184,
+          "opacity" : 1,
+          "red" : 0.879901734395405
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.18398968402420224,
+          "green" : 0.15189707751621845,
+          "opacity" : 1,
+          "red" : 0.1557858840743402
+        },
+        "height" : 0.1646153846153846,
+        "id" : "BBD7650B-0D03-4C63-BD25-BC854EAF169A",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Tom 3",
+        "labelSize" : 64,
+        "note" : 45,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 64,
+        "width" : 0.17558638083228245,
+        "x" : 0.4738713745271122,
+        "y" : 0.41009615384615383
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.6392832461375554,
+          "green" : 0.30237587474669503,
+          "opacity" : 1,
+          "red" : 0.3504973965430168
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.17374497580450557,
+          "green" : 0.22755979271635537,
+          "opacity" : 1,
+          "red" : 0.27178487092353576
+        },
+        "height" : 0.16882326007326004,
+        "id" : "8698171A-8882-41E6-9979-BEB527575F5A",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Tom 4",
+        "labelSize" : 64,
+        "note" : 43,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.114249684741488,
+        "x" : 0.4778058007566204,
+        "y" : 0.2208653846153846
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.8576499329581684,
+          "green" : 0.6847629131011085,
+          "opacity" : 1,
+          "red" : 0.36351778154129344
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.33298295097301966,
+          "green" : 0.25760389302438497,
+          "opacity" : 1,
+          "red" : 0.33221996344662924
+        },
+        "height" : 0.2232188644688645,
+        "id" : "DA0E431B-7FDA-4A9F-8EDF-57411F07393C",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Tom 5",
+        "labelSize" : 64,
+        "note" : 41,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.14010088272383356,
+        "x" : 0.6214249684741492,
+        "y" : 0.2490155677655678
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.6004489582030033,
+          "green" : 0.5688553142665974,
+          "opacity" : 1,
+          "red" : 0.9529455411676719
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.08866121592778294,
+          "green" : 0.12223657730153488,
+          "opacity" : 1,
+          "red" : 0.07790213997505467
+        },
+        "height" : 0.13634615384615384,
+        "id" : "E22716F5-6D9E-455C-B1E2-A3ACCAB39303",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Rim",
+        "labelSize" : 64,
+        "note" : 37,
+        "rotation" : 0,
+        "shape" : "rounded",
+        "value" : 64,
+        "width" : 0.2393064312736444,
+        "x" : 0,
+        "y" : 0.7685119047619048
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.6285421227756062,
+          "green" : 0.7054865215274249,
+          "opacity" : 1,
+          "red" : 0.8334601523772871
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.08306853994733279,
+          "green" : 0.29962886322250293,
+          "opacity" : 1,
+          "red" : 0.34110580213127384
+        },
+        "height" : 0.24362637362637365,
+        "id" : "3DAC288B-9ABD-4D5A-8A22-123C776D097A",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Snare",
+        "labelSize" : 64,
+        "note" : 38,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.16353089533417403,
+        "x" : 0.195094577553594,
+        "y" : 0.5149175824175825
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.5159712043805322,
+          "green" : 0.822846541693783,
+          "opacity" : 1,
+          "red" : 0.2786884579312119
+        },
+        "cc" : 1,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.0654499185567047,
+          "green" : 0.14720664369139258,
+          "opacity" : 1,
+          "red" : 0.17825930554293773
+        },
+        "height" : 0.40284798534798527,
+        "id" : "7B750B19-3AF0-4009-A3B3-EA2DD0B885ED",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "note",
+        "label" : "Kick",
+        "labelSize" : 64,
+        "note" : 36,
+        "rotation" : 0,
+        "shape" : "capsule",
+        "value" : 64,
+        "width" : 0.2683028423501877,
+        "x" : 0.3459436738125263,
+        "y" : 0.5971520146520147
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 72,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.07807234432234432,
+        "id" : "B4B8C669-DFC6-41E1-A4E5-70526847F5C5",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "keyCommand",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 60,
+        "rotation" : 0,
+        "shape" : "square",
+        "value" : 64,
+        "width" : 0.0550189155107188,
+        "x" : 0.6640479192938211,
+        "y" : 0.5038049450549451
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 1,
+        "channel" : 1,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.2876190476190477,
+        "id" : "E0FA3E54-5820-485D-802C-A14EFAF72EBF",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "ccSliderY",
+        "label" : "CC V",
+        "labelSize" : 64,
+        "note" : 60,
+        "rotation" : 0,
+        "shape" : "circle",
+        "value" : 0,
+        "width" : 0.05,
+        "x" : 0.6290542244640605,
+        "y" : 0.7123809523809523
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 73,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.07230311355311356,
+        "id" : "E509E809-26CD-4F0C-85FF-4CB63C669329",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "keyCommand",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 60,
+        "rotation" : 0,
+        "shape" : "square",
+        "value" : 64,
+        "width" : 0.05407313997477933,
+        "x" : 0.6652711223203028,
+        "y" : 0.5928434065934066
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 76,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.07374542124542124,
+        "id" : "35C69033-2075-482E-9B47-132BEE3C6741",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "keyCommand",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 60,
+        "rotation" : 0,
+        "shape" : "triangle",
+        "value" : 64,
+        "width" : 0.06132408575031527,
+        "x" : 0.7286002522068098,
+        "y" : 0.506401098901099
+      },
+      {
+        "activeFill" : {
+          "blue" : 0.10196078431372549,
+          "green" : 0.10196078431372549,
+          "opacity" : 1,
+          "red" : 0.10196078431372549
+        },
+        "cc" : 77,
+        "channel" : 10,
+        "fill" : {
+          "blue" : 0.0392156862745098,
+          "green" : 0.0392156862745098,
+          "opacity" : 1,
+          "red" : 0.0392156862745098
+        },
+        "height" : 0.07374542124542124,
+        "id" : "27945CEF-EAC5-4502-AF3F-2AC3C06D712A",
+        "keyCommand" : "ArrowLeft",
+        "kind" : "keyCommand",
+        "label" : "Pad",
+        "labelSize" : 64,
+        "note" : 60,
+        "rotation" : 0,
+        "shape" : "triangle",
+        "value" : 64,
+        "width" : 0.06132408575031527,
+        "x" : 0.727301387137453,
+        "y" : 0.5901510989010991
+      }
+    ],
+    "name" : "Editable Drumset",
+    "showLabels" : false,
+    "snapToGrid" : false
+  },
+  "presets" : [
+    {
+      "accelFloor" : 0,
+      "accelMax" : 1,
+      "accelSensitivity" : 1.98,
+      "baseOctave" : 4,
+      "cc1Number" : 1,
+      "cc1Visible" : true,
+      "cc2Number" : 74,
+      "cc2Visible" : false,
+      "customLayout" : {
+        "flipHorizontal" : true,
+        "gridColumns" : 12,
+        "gridRows" : 8,
+        "id" : "C8527DE5-E8DE-41A1-A205-1C3025B9679A",
+        "items" : [
+          {
+            "activeFill" : {
+              "blue" : 0.6119816280299889,
+              "green" : 0.6083830424256267,
+              "opacity" : 1,
+              "red" : 0.3620110050476941
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.1810258767182432,
+              "green" : 0.29471571719570183,
+              "opacity" : 1,
+              "red" : 0.31544302642160416
+            },
+            "height" : 0.08346153846153846,
+            "id" : "199A0327-8CC7-4379-9958-0432CC81D76B",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Crash",
+            "labelSize" : 64,
+            "note" : 49,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.2546784363177806,
+            "x" : 0.02518284993694847,
+            "y" : 0.10759615384615386
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.5431367030703186,
+              "green" : 0.8374769327227083,
+              "opacity" : 1,
+              "red" : 0.5582037525209922
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.23159792942616664,
+              "green" : 0.09032338878059286,
+              "opacity" : 1,
+              "red" : 0.33658635463773323
+            },
+            "height" : 0.08057692307692307,
+            "id" : "287C5DAE-BC09-4D53-B396-B4FC97276E5E",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Ride",
+            "labelSize" : 64,
+            "note" : 51,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.2549936948297604,
+            "x" : 0.16083228247162662,
+            "y" : 0.007115384615384621
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.8275093999935604,
+              "green" : 0.27978766729392934,
+              "opacity" : 1,
+              "red" : 0.7767209890929994
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.34223311716064,
+              "green" : 0.2597064255569148,
+              "opacity" : 1,
+              "red" : 0.18841514064026024
+            },
+            "height" : 0.08173076923076923,
+            "id" : "6516EBCA-C410-4E5A-9706-E7E1F07692CB",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Crash 2",
+            "labelSize" : 64,
+            "note" : 57,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.24049180327868852,
+            "x" : 0.36047919293820946,
+            "y" : 0.1051923076923077
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.5137562423937327,
+              "green" : 0.5112131210832098,
+              "opacity" : 1,
+              "red" : 0.4992514899838558
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.34610446504907244,
+              "green" : 0.1565865646214489,
+              "opacity" : 1,
+              "red" : 0.20237334947354424
+            },
+            "height" : 0.07788461538461539,
+            "id" : "162AF104-0072-4746-BE8B-9DDFAF73B7B5",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Splash",
+            "labelSize" : 64,
+            "note" : 55,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.2441361916771753,
+            "x" : 0.5166204287515762,
+            "y" : 0.010000000000000005
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.7627370693601259,
+              "green" : 0.6875972544078721,
+              "opacity" : 1,
+              "red" : 0.754874886306201
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.026183184217475123,
+              "green" : 0.204583887575303,
+              "opacity" : 1,
+              "red" : 0.0877768142915697
+            },
+            "height" : 0.12,
+            "id" : "5058B5DF-A594-49AF-9F2F-D987C0C08052",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Open Hat",
+            "labelSize" : 64,
+            "note" : 46,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.22,
+            "x" : 0.04,
+            "y" : 0.23
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.5646623392475019,
+              "green" : 0.33599259789200253,
+              "opacity" : 1,
+              "red" : 0.6164527353823099
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.29304060738698107,
+              "green" : 0.12162065022195188,
+              "opacity" : 1,
+              "red" : 0.07297757798526555
+            },
+            "height" : 0.12,
+            "id" : "4B21DDE2-B04B-4DA8-A1BE-47F672DA8393",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Hat",
+            "labelSize" : 64,
+            "note" : 42,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.22,
+            "x" : 0.04000000000000012,
+            "y" : 0.38
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.832103417940335,
+              "green" : 0.4243975722524974,
+              "opacity" : 1,
+              "red" : 0.34573077025252397
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.09631874315964205,
+              "green" : 0.03694817523622741,
+              "opacity" : 1,
+              "red" : 0.33260503291793775
+            },
+            "height" : 0.12519230769230769,
+            "id" : "0D52867B-94C8-43A8-9E04-203DA363C9FA",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Tom 1",
+            "labelSize" : 64,
+            "note" : 50,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.1128499369482976,
+            "x" : 0.28730138713745224,
+            "y" : 0.30673076923076925
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.5442870931947099,
+              "green" : 0.6463547020469708,
+              "opacity" : 1,
+              "red" : 0.5380248734480938
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.2484917726021705,
+              "green" : 0.21709524627968074,
+              "opacity" : 1,
+              "red" : 0.3204742379718288
+            },
+            "height" : 0.13384615384615384,
+            "id" : "D6385C28-961E-427A-B6B8-A1F37CDC31C7",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Tom 2",
+            "labelSize" : 64,
+            "note" : 47,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.14153846153846153,
+            "x" : 0.37097099621689794,
+            "y" : 0.3581730769230769
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.3420451282367023,
+              "green" : 0.29614169691065184,
+              "opacity" : 1,
+              "red" : 0.879901734395405
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.18398968402420224,
+              "green" : 0.15189707751621845,
+              "opacity" : 1,
+              "red" : 0.1557858840743402
+            },
+            "height" : 0.1646153846153846,
+            "id" : "BBD7650B-0D03-4C63-BD25-BC854EAF169A",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Tom 3",
+            "labelSize" : 64,
+            "note" : 45,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 64,
+            "width" : 0.17558638083228245,
+            "x" : 0.4738713745271122,
+            "y" : 0.41009615384615383
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.6392832461375554,
+              "green" : 0.30237587474669503,
+              "opacity" : 1,
+              "red" : 0.3504973965430168
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.17374497580450557,
+              "green" : 0.22755979271635537,
+              "opacity" : 1,
+              "red" : 0.27178487092353576
+            },
+            "height" : 0.16882326007326004,
+            "id" : "8698171A-8882-41E6-9979-BEB527575F5A",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Tom 4",
+            "labelSize" : 64,
+            "note" : 43,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.114249684741488,
+            "x" : 0.4778058007566204,
+            "y" : 0.2208653846153846
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.8576499329581684,
+              "green" : 0.6847629131011085,
+              "opacity" : 1,
+              "red" : 0.36351778154129344
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.33298295097301966,
+              "green" : 0.25760389302438497,
+              "opacity" : 1,
+              "red" : 0.33221996344662924
+            },
+            "height" : 0.2232188644688645,
+            "id" : "DA0E431B-7FDA-4A9F-8EDF-57411F07393C",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Tom 5",
+            "labelSize" : 64,
+            "note" : 41,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.14010088272383356,
+            "x" : 0.6214249684741492,
+            "y" : 0.2490155677655678
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.6004489582030033,
+              "green" : 0.5688553142665974,
+              "opacity" : 1,
+              "red" : 0.9529455411676719
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.08866121592778294,
+              "green" : 0.12223657730153488,
+              "opacity" : 1,
+              "red" : 0.07790213997505467
+            },
+            "height" : 0.13634615384615384,
+            "id" : "E22716F5-6D9E-455C-B1E2-A3ACCAB39303",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Rim",
+            "labelSize" : 64,
+            "note" : 37,
+            "rotation" : 0,
+            "shape" : "rounded",
+            "value" : 64,
+            "width" : 0.2393064312736444,
+            "x" : 0,
+            "y" : 0.7685119047619048
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.6285421227756062,
+              "green" : 0.7054865215274249,
+              "opacity" : 1,
+              "red" : 0.8334601523772871
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.08306853994733279,
+              "green" : 0.29962886322250293,
+              "opacity" : 1,
+              "red" : 0.34110580213127384
+            },
+            "height" : 0.24362637362637365,
+            "id" : "3DAC288B-9ABD-4D5A-8A22-123C776D097A",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Snare",
+            "labelSize" : 64,
+            "note" : 38,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.16353089533417403,
+            "x" : 0.195094577553594,
+            "y" : 0.5149175824175825
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.5159712043805322,
+              "green" : 0.822846541693783,
+              "opacity" : 1,
+              "red" : 0.2786884579312119
+            },
+            "cc" : 1,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.0654499185567047,
+              "green" : 0.14720664369139258,
+              "opacity" : 1,
+              "red" : 0.17825930554293773
+            },
+            "height" : 0.40284798534798527,
+            "id" : "7B750B19-3AF0-4009-A3B3-EA2DD0B885ED",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "note",
+            "label" : "Kick",
+            "labelSize" : 64,
+            "note" : 36,
+            "rotation" : 0,
+            "shape" : "capsule",
+            "value" : 64,
+            "width" : 0.2683028423501877,
+            "x" : 0.3459436738125263,
+            "y" : 0.5971520146520147
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 72,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.07807234432234432,
+            "id" : "B4B8C669-DFC6-41E1-A4E5-70526847F5C5",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "keyCommand",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 60,
+            "rotation" : 0,
+            "shape" : "square",
+            "value" : 64,
+            "width" : 0.0550189155107188,
+            "x" : 0.6640479192938211,
+            "y" : 0.5038049450549451
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 1,
+            "channel" : 1,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.2876190476190477,
+            "id" : "E0FA3E54-5820-485D-802C-A14EFAF72EBF",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "ccSliderY",
+            "label" : "CC V",
+            "labelSize" : 64,
+            "note" : 60,
+            "rotation" : 0,
+            "shape" : "circle",
+            "value" : 0,
+            "width" : 0.05,
+            "x" : 0.6290542244640605,
+            "y" : 0.7123809523809523
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 73,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.07230311355311356,
+            "id" : "E509E809-26CD-4F0C-85FF-4CB63C669329",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "keyCommand",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 60,
+            "rotation" : 0,
+            "shape" : "square",
+            "value" : 64,
+            "width" : 0.05407313997477933,
+            "x" : 0.6652711223203028,
+            "y" : 0.5928434065934066
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 76,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.07374542124542124,
+            "id" : "35C69033-2075-482E-9B47-132BEE3C6741",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "keyCommand",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 60,
+            "rotation" : 0,
+            "shape" : "triangle",
+            "value" : 64,
+            "width" : 0.06132408575031527,
+            "x" : 0.7286002522068098,
+            "y" : 0.506401098901099
+          },
+          {
+            "activeFill" : {
+              "blue" : 0.10196078431372549,
+              "green" : 0.10196078431372549,
+              "opacity" : 1,
+              "red" : 0.10196078431372549
+            },
+            "cc" : 77,
+            "channel" : 10,
+            "fill" : {
+              "blue" : 0.0392156862745098,
+              "green" : 0.0392156862745098,
+              "opacity" : 1,
+              "red" : 0.0392156862745098
+            },
+            "height" : 0.07374542124542124,
+            "id" : "27945CEF-EAC5-4502-AF3F-2AC3C06D712A",
+            "keyCommand" : "ArrowLeft",
+            "kind" : "keyCommand",
+            "label" : "Pad",
+            "labelSize" : 64,
+            "note" : 60,
+            "rotation" : 0,
+            "shape" : "triangle",
+            "value" : 64,
+            "width" : 0.06132408575031527,
+            "x" : 0.727301387137453,
+            "y" : 0.5901510989010991
+          }
+        ],
+        "name" : "Editable Drumset",
+        "showLabels" : false,
+        "snapToGrid" : false
+      },
+      "drumColumns" : 12,
+      "drumCymbalCount" : 4,
+      "drumCymbalRows" : 1,
+      "drumFlip" : true,
+      "drumMap" : [
+        36,
+        38,
+        42,
+        46,
+        41,
+        43,
+        45,
+        47,
+        48,
+        50,
+        49,
+        51,
+        55,
+        57,
+        39,
+        37
+      ],
+      "drumRows" : 6,
+      "drumTomCount" : 6,
+      "drumTomRows" : 2,
+      "fretCount" : 13,
+      "id" : "254D72D9-B5F4-47DC-A9A7-E71B1976816E",
+      "keyPadCCDown" : 83,
+      "keyPadCCI" : 84,
+      "keyPadCCLeft" : 80,
+      "keyPadCCRight" : 81,
+      "keyPadCCUp" : 82,
+      "keyPadEditMode" : false,
+      "keyPadPressValue" : 127,
+      "keyPads" : [
+        {
+          "cc" : 80,
+          "height" : 0.6,
+          "id" : "EBFCF2E0-E759-4204-B2BA-0F15732A56C3",
+          "label" : "←",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.05,
+          "y" : 0.2
+        },
+        {
+          "cc" : 81,
+          "height" : 0.6,
+          "id" : "A69D156E-F0C2-439E-A4E1-5B47817D5B74",
+          "label" : "→",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.245,
+          "y" : 0.2
+        },
+        {
+          "cc" : 83,
+          "height" : 0.6,
+          "id" : "FE36B00C-AB9C-4C25-9BD4-C3C1A91B4888",
+          "label" : "↓",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.44,
+          "y" : 0.2
+        },
+        {
+          "cc" : 82,
+          "height" : 0.6,
+          "id" : "5E50FD9C-10A4-41DB-999C-1088E33E713B",
+          "label" : "↑",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.635,
+          "y" : 0.2
+        },
+        {
+          "cc" : 84,
+          "height" : 0.6,
+          "id" : "FF2A66D1-F5E8-4A78-A9B3-DE6A25B037B6",
+          "label" : "i",
+          "pressValue" : 127,
+          "width" : 0.16,
+          "x" : 0.8300000000000001,
+          "y" : 0.2
+        }
+      ],
+      "keyboardOctaves" : 2,
+      "keyboardRows" : 2,
+      "layout" : "custom",
+      "midiChannel" : 10,
+      "motionCC" : 1,
+      "motionToCC" : false,
+      "name" : "Drum Grid Custom Cc Boss",
+      "noteRepeatEnabled" : false,
+      "noteRepeatSubdivision" : 4,
+      "noteRepeatSwing" : 0,
+      "noteRepeatSwingSubdivision" : 2,
+      "noteRepeatTempo" : 120,
+      "pitchBendEnabled" : false,
+      "pitchBendRange" : 12,
+      "quickCCNumbers" : [
+        1
+      ],
+      "quickCCVisibleCount" : 1,
+      "rootNote" : 0,
+      "scale" : "chromatic",
+      "showMacKeyPads" : true,
+      "showNoteRepeatControls" : false,
+      "stringChannels" : [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "stringTunings" : [
+        64,
+        59,
+        55,
+        50,
+        45,
+        40
+      ],
+      "sustainMode" : "hold",
+      "theme" : {
+        "accent" : {
+          "blue" : 0.7946950135277614,
+          "green" : 0.5849796668773982,
+          "opacity" : 1,
+          "red" : 0.28482948392771057
+        },
+        "activeGlow" : {
+          "blue" : 0.8962042734345435,
+          "green" : 0.4025368024615576,
+          "opacity" : 0.8,
+          "red" : 0.48598019037344853
+        },
+        "activePad" : {
+          "blue" : 0.9086077276216994,
+          "green" : 0.971297880199647,
+          "opacity" : 1,
+          "red" : 0.559008929109349
+        },
+        "background" : {
+          "blue" : 0,
+          "green" : 0,
+          "opacity" : 1,
+          "red" : 0
+        },
+        "colorMode" : "custom",
+        "controlFill" : "solid",
+        "glowOnTouch" : false,
+        "gradientBottom" : {
+          "blue" : 0.5961369048109246,
+          "green" : 0.48726776509684666,
+          "opacity" : 1,
+          "red" : 0.2769211838500333
+        },
+        "gradientTop" : {
+          "blue" : 0.37421677304730316,
+          "green" : 0.9055842034434307,
+          "opacity" : 1,
+          "red" : 0.2576041147529873
+        },
+        "hueBackgroundDrift" : 0.1,
+        "hueBlendIntensity" : 0.42,
+        "huePadAmount" : 180,
+        "hueShift" : false,
+        "hueShiftAmount" : 243.16887450351996,
+        "hueShiftSpeed" : 7.694814450331235,
+        "markerColor" : {
+          "blue" : 0.8525183630457904,
+          "green" : 0.3944953896923143,
+          "opacity" : 0.75,
+          "red" : 0.3502066558539131
+        },
+        "markerMode" : "edges",
+        "markerOffset" : -80,
+        "markerShape" : "dot",
+        "pad" : {
+          "blue" : 0.1226201653263198,
+          "green" : 0.11983224190226632,
+          "opacity" : 1,
+          "red" : 0.2191101824035347
+        },
+        "padBorder" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.9,
+          "red" : 1
+        },
+        "padBorderWidth" : 2.6,
+        "padFillMode" : "solid",
+        "padGap" : 8,
+        "padGlow" : {
+          "blue" : 0.6820233097918766,
+          "green" : 0.4198255895909281,
+          "opacity" : 0.45,
+          "red" : 0.6649299472250474
+        },
+        "panel" : {
+          "blue" : 0.3427002951104891,
+          "green" : 0.11970134986052168,
+          "opacity" : 0.72,
+          "red" : 0.20941191809746854
+        },
+        "pulseGlow" : true,
+        "rootBorder" : {
+          "blue" : 1,
+          "green" : 1,
+          "opacity" : 0.8,
+          "red" : 1
+        },
+        "rowGap" : 7,
+        "scaleOnTouch" : true,
+        "scalePad" : {
+          "blue" : 0.3199087856404316,
+          "green" : 0.19384680186509914,
+          "opacity" : 1,
+          "red" : 0.1975956193160822
+        },
+        "shape" : "circle",
+        "showNoteNames" : false
+      },
+      "touchForceSensitivity" : 0,
+      "velocity" : 118,
+      "velocityCurve" : "hard",
+      "velocityMax" : 127,
+      "velocityMin" : 1,
+      "velocityMode" : "accelerometer",
+      "vibratoDepth" : 0.2,
+      "vibratoEnabled" : false,
+      "vibratoRate" : 6
+    }
+  ],
+  "type" : "midivana-native-preset"
+}

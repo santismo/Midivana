@@ -37,7 +37,6 @@ struct ContentView: View {
   @StateObject private var app = AppModel()
   @State private var showingSettings = false
   @State private var showingMacKeys = false
-  @State private var showingNoteRepeat = false
   @State private var settingsOffset = CGSize(width: -18, height: 86)
   @State private var keyPadPanelOffset = CGSize.zero
   @State private var keyPadPanelSize = CGSize(width: 430, height: 168)
@@ -55,7 +54,7 @@ struct ContentView: View {
               .ignoresSafeArea()
 
             VStack(spacing: 12) {
-              TopBar(app: app, showingSettings: $showingSettings, showingMacKeys: $showingMacKeys, showingNoteRepeat: $showingNoteRepeat)
+              TopBar(app: app, showingSettings: $showingSettings, showingMacKeys: $showingMacKeys)
               PerformanceSurface(app: app)
             }
             .padding(.horizontal, app.preset.layout == .custom ? 2 : 18)
@@ -107,16 +106,6 @@ struct ContentView: View {
             }
         }
 
-        if showingNoteRepeat {
-          NoteRepeatWindow(app: app, visible: $showingNoteRepeat)
-            .padding(.top, 90)
-            .padding(.trailing, 258)
-            .zIndex(70)
-            .transaction { transaction in
-              transaction.animation = nil
-            }
-        }
-
         if showingSettings {
           FloatingSettingsWindow(app: app, visible: $showingSettings, offset: $settingsOffset)
             .zIndex(80)
@@ -134,11 +123,6 @@ struct ContentView: View {
     .onChange(of: app.preset.showMacKeyPads) { _, enabled in
       if !enabled {
         showingMacKeys = false
-      }
-    }
-    .onChange(of: app.preset.showNoteRepeatControls) { _, enabled in
-      if !enabled {
-        showingNoteRepeat = false
       }
     }
     .onDisappear {
@@ -494,7 +478,7 @@ private struct FloatingSettingsWindow: View {
   @State private var resizeStart: CGSize?
 
   var body: some View {
-    ZStack(alignment: .bottomTrailing) {
+    ZStack(alignment: .bottomLeading) {
       VStack(spacing: 0) {
         HStack(spacing: 8) {
           Capsule()
@@ -559,7 +543,7 @@ private struct FloatingSettingsWindow: View {
         }
         guard let resizeStart else { return }
         size = CGSize(
-          width: min(max(342, resizeStart.width + value.translation.width), 760),
+          width: min(max(342, resizeStart.width - value.translation.width), 760),
           height: min(max(360, resizeStart.height + value.translation.height), 760)
         )
       }
@@ -649,14 +633,12 @@ private struct TopBar: View {
   @ObservedObject private var midi: MIDIService
   @Binding var showingSettings: Bool
   @Binding var showingMacKeys: Bool
-  @Binding var showingNoteRepeat: Bool
 
-  init(app: AppModel, showingSettings: Binding<Bool>, showingMacKeys: Binding<Bool>, showingNoteRepeat: Binding<Bool>) {
+  init(app: AppModel, showingSettings: Binding<Bool>, showingMacKeys: Binding<Bool>) {
     self.app = app
     self.midi = app.midi
     self._showingSettings = showingSettings
     self._showingMacKeys = showingMacKeys
-    self._showingNoteRepeat = showingNoteRepeat
   }
 
   var body: some View {
@@ -705,20 +687,6 @@ private struct TopBar: View {
           .accessibilityLabel("Mac keys")
         }
 
-        if app.preset.showNoteRepeatControls {
-          Button {
-            showingNoteRepeat.toggle()
-          } label: {
-            Image(systemName: "repeat")
-              .font(.headline.weight(.semibold))
-              .frame(width: 42, height: 42)
-              .background(app.preset.noteRepeatEnabled ? app.preset.theme.activePad.color : app.preset.theme.panel.color, in: RoundedRectangle(cornerRadius: 12))
-              .overlay(RoundedRectangle(cornerRadius: 12).stroke((app.preset.noteRepeatEnabled ? app.preset.theme.activeGlow.color : app.preset.theme.padBorder.color).opacity(0.5), lineWidth: 1))
-          }
-          .buttonStyle(.plain)
-          .accessibilityLabel("Note repeat")
-        }
-
         Menu {
           ForEach(PerformanceLayout.allCases) { layout in
             Button {
@@ -742,6 +710,16 @@ private struct TopBar: View {
             app.setCustomLayout(.blankGrid)
           } label: {
             Label("Blank Grid", systemImage: "square.grid.3x3")
+          }
+          if !app.presetStore.quickLayoutPresets.isEmpty {
+            Divider()
+            ForEach(app.presetStore.quickLayoutPresets) { preset in
+              Button {
+                app.apply(preset)
+              } label: {
+                Label(preset.name, systemImage: "rectangle.on.rectangle")
+              }
+            }
           }
         } label: {
           Image(systemName: "rectangle.grid.2x2")
@@ -1265,118 +1243,6 @@ private struct KeyPadHitTarget: Identifiable {
   let id: UUID
   let pad: MacKeyPad
   let frame: CGRect
-}
-
-private struct NoteRepeatWindow: View {
-  @ObservedObject var app: AppModel
-  @Binding var visible: Bool
-  @State private var offset = CGSize.zero
-  @State private var dragStart: CGSize?
-
-  var body: some View {
-    VStack(alignment: .leading, spacing: 10) {
-      HStack(spacing: 8) {
-        Capsule()
-          .fill(Color.white.opacity(0.38))
-          .frame(width: 34, height: 4)
-        Text("Repeat")
-          .font(.subheadline.weight(.semibold))
-        Spacer()
-        Button {
-          visible = false
-        } label: {
-          Image(systemName: "xmark")
-            .font(.caption.weight(.bold))
-            .frame(width: 26, height: 22)
-        }
-        .buttonStyle(.plain)
-      }
-      .contentShape(Rectangle())
-      .gesture(moveGesture)
-
-      Toggle("MIDI note repeat", isOn: $app.preset.noteRepeatEnabled)
-
-      VStack(alignment: .leading, spacing: 4) {
-        HStack {
-          Text("Tempo")
-          Spacer()
-          TextField("Tempo", value: $app.preset.noteRepeatTempo, format: .number)
-            .keyboardType(.decimalPad)
-            .multilineTextAlignment(.trailing)
-            .frame(width: 70)
-            .textFieldStyle(.roundedBorder)
-        }
-        Slider(value: tempoBinding, in: 20...300, step: 1)
-      }
-
-      VStack(alignment: .leading, spacing: 4) {
-        Text("Rate 1/\(app.preset.noteRepeatSubdivision)")
-          .font(.caption.weight(.semibold))
-        Slider(value: subdivisionBinding, in: 1...32, step: 1)
-      }
-
-      VStack(alignment: .leading, spacing: 4) {
-        Text("Swing \(Int(app.preset.noteRepeatSwing.rounded()))%")
-          .font(.caption.weight(.semibold))
-        Slider(value: $app.preset.noteRepeatSwing, in: 0...75, step: 1)
-      }
-
-      VStack(alignment: .leading, spacing: 4) {
-        Text("Swing subdivision \(app.preset.noteRepeatSwingSubdivision)")
-          .font(.caption.weight(.semibold))
-        Slider(value: swingSubdivisionBinding, in: 2...8, step: 1)
-      }
-
-      Toggle("Show repeat button", isOn: $app.preset.showNoteRepeatControls)
-    }
-    .padding(12)
-    .frame(width: 248)
-    .background(app.preset.theme.panel.color.opacity(0.94), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
-    .overlay(RoundedRectangle(cornerRadius: 12).stroke(.white.opacity(0.16), lineWidth: 1))
-    .shadow(color: .black.opacity(0.35), radius: 16, y: 9)
-    .offset(offset)
-    .transaction { transaction in
-      transaction.animation = nil
-    }
-  }
-
-  private var moveGesture: some Gesture {
-    DragGesture(minimumDistance: 0, coordinateSpace: .named("MidivanaRoot"))
-      .onChanged { value in
-        if dragStart == nil {
-          dragStart = offset
-        }
-        guard let dragStart else { return }
-        offset = CGSize(width: dragStart.width + value.translation.width, height: dragStart.height + value.translation.height)
-      }
-      .onEnded { _ in
-        dragStart = nil
-      }
-  }
-
-  private var tempoBinding: Binding<Double> {
-    Binding {
-      app.preset.noteRepeatTempo
-    } set: { value in
-      app.preset.noteRepeatTempo = min(max(20, value), 300)
-    }
-  }
-
-  private var subdivisionBinding: Binding<Double> {
-    Binding {
-      Double(app.preset.noteRepeatSubdivision)
-    } set: { value in
-      app.preset.noteRepeatSubdivision = min(max(1, Int(value.rounded())), 32)
-    }
-  }
-
-  private var swingSubdivisionBinding: Binding<Double> {
-    Binding {
-      Double(app.preset.noteRepeatSwingSubdivision)
-    } set: { value in
-      app.preset.noteRepeatSwingSubdivision = min(max(2, Int(value.rounded())), 8)
-    }
-  }
 }
 
 private struct KeyPadFace: View {
@@ -2224,8 +2090,8 @@ private struct PadChrome: View {
         }
       }
       .padding(5)
-      .rotationEffect(.degrees(rotation))
     }
+    .rotationEffect(.degrees(rotation))
   }
 
   private var padHueAngle: Angle {
@@ -2343,6 +2209,7 @@ private struct CustomLayoutSurface: View {
               recordUndo()
             }
             .frame(width: itemWidth, height: itemHeight)
+            .rotationEffect(.degrees(item.rotation))
             .position(itemPosition)
             .zIndex(20)
           }
@@ -2430,7 +2297,8 @@ private struct CustomLayoutSurface: View {
         id: item.id,
         item: item,
         frame: CGRect(x: displayX, y: item.y, width: item.width, height: item.height),
-        shape: item.shape
+        shape: item.shape,
+        rotation: item.rotation
       )
     }
   }
@@ -2450,6 +2318,7 @@ private struct CustomTouchTarget: Identifiable {
   let item: CustomItem
   let frame: CGRect
   let shape: PadShape
+  let rotation: Double
 }
 
 private struct CustomMultiTouchOverlay: UIViewRepresentable {
@@ -2534,16 +2403,13 @@ private struct CustomMultiTouchOverlay: UIViewRepresentable {
       guard bounds.width > 0, bounds.height > 0 else { return nil }
       let normalized = CGPoint(x: point.x / bounds.width, y: point.y / bounds.height)
       return targets.reversed().first { target in
-        guard target.frame.contains(normalized) else { return false }
-        let local = CGPoint(
-          x: (normalized.x - target.frame.minX) / max(0.0001, target.frame.width),
-          y: (normalized.y - target.frame.minY) / max(0.0001, target.frame.height)
-        )
+        let local = unrotatedLocalPoint(for: normalized, in: target)
         return contains(local: local, in: target)
       }
     }
 
     private func contains(local point: CGPoint, in target: CustomTouchTarget) -> Bool {
+      guard (0...1).contains(point.x), (0...1).contains(point.y) else { return false }
       switch target.shape {
       case .rounded, .square:
         return true
@@ -2568,6 +2434,20 @@ private struct CustomMultiTouchOverlay: UIViewRepresentable {
       case .spark:
         return polygonContains(point, points: [(0.5, 0), (0.62, 0.33), (1, 0.5), (0.62, 0.67), (0.5, 1), (0.38, 0.67), (0, 0.5), (0.38, 0.33)])
       }
+    }
+
+    private func unrotatedLocalPoint(for point: CGPoint, in target: CustomTouchTarget) -> CGPoint {
+      let center = CGPoint(x: target.frame.midX, y: target.frame.midY)
+      let width = max(0.0001, target.frame.width * bounds.width)
+      let height = max(0.0001, target.frame.height * bounds.height)
+      let dx = (point.x - center.x) * bounds.width
+      let dy = (point.y - center.y) * bounds.height
+      let angle = CGFloat(-target.rotation * Double.pi / 180)
+      let cosine: CGFloat = cos(angle)
+      let sine: CGFloat = sin(angle)
+      let x = dx * cosine - dy * sine
+      let y = dx * sine + dy * cosine
+      return CGPoint(x: 0.5 + x / width, y: 0.5 + y / height)
     }
 
     private func capsuleContains(local point: CGPoint, frame: CGRect) -> Bool {
@@ -2893,7 +2773,7 @@ private struct CustomEditorPanel: View {
           Button { add(.panic) } label: { Label("Panic", systemImage: "stop.circle") }
           Button { add(.image) } label: { Label("Image", systemImage: "photo") }
           Button { add(.video) } label: { Label("Video", systemImage: "video") }
-          Button { add(.keyCommand) } label: { Label("Key", systemImage: "keyboard") }
+          Button { add(.keyCommand) } label: { Label("CC Key", systemImage: "keyboard") }
         } label: {
           panelLabel("plus.square", "Add")
         }
@@ -3095,7 +2975,7 @@ private struct CustomEditorPanel: View {
     case .panic: return "Panic"
     case .image: return "Image"
     case .video: return "Video"
-    case .keyCommand: return "Key"
+    case .keyCommand: return "CC Key"
     }
   }
 
@@ -3169,18 +3049,38 @@ private struct CustomEditorItemFields: View {
       .pickerStyle(.menu)
 
       if item.kind == .note {
-        Stepper("Note \(item.note)", value: $item.note, in: 0...127)
-        Stepper("Channel \(item.channel)", value: $item.channel, in: 1...16)
+        HStack(spacing: 8) {
+          numberField("Note", keyPath: \.note, range: 0...127)
+          numberField("Channel", keyPath: \.channel, range: 1...16)
+        }
       }
 
       if item.kind == .ccSliderX || item.kind == .ccSliderY {
-        Stepper("CC \(item.cc)", value: $item.cc, in: 0...127)
-        Stepper("Value \(item.value)", value: $item.value, in: 0...127)
+        HStack(spacing: 8) {
+          numberField("CC", keyPath: \.cc, range: 0...127)
+          numberField("Value", keyPath: \.value, range: 0...127)
+          numberField("Channel", keyPath: \.channel, range: 1...16)
+        }
+
+        VStack(alignment: .leading, spacing: 4) {
+          Text("Slider appearance")
+            .font(.caption.weight(.semibold))
+          Picker("Slider appearance", selection: sliderStyleBinding) {
+            ForEach(CustomSliderStyle.allCases) { style in
+              Text(style.title).tag(style)
+            }
+          }
+          .labelsHidden()
+          .pickerStyle(.segmented)
+        }
       }
 
       if item.kind == .keyCommand {
-        Stepper("CC \(item.cc)", value: $item.cc, in: 0...127)
-        Stepper("Press value \(item.value)", value: $item.value, in: 64...127)
+        HStack(spacing: 8) {
+          numberField("CC", keyPath: \.cc, range: 0...127)
+          numberField("Press", keyPath: \.value, range: 1...127)
+          numberField("Channel", keyPath: \.channel, range: 1...16)
+        }
         Picker("Key", selection: $item.keyCommand) {
           Text("Left").tag("ArrowLeft")
           Text("Right").tag("ArrowRight")
@@ -3209,6 +3109,9 @@ private struct CustomEditorItemFields: View {
       }
       .pickerStyle(.menu)
 
+      ColorPicker("Pad color", selection: colorBinding(\.fill), supportsOpacity: true)
+      ColorPicker("Held color", selection: colorBinding(\.activeFill), supportsOpacity: true)
+
       HStack(spacing: 6) {
         moveButton("arrow.left", dx: -moveStepX, dy: 0)
         moveButton("arrow.up", dx: 0, dy: -moveStepY)
@@ -3222,6 +3125,12 @@ private struct CustomEditorItemFields: View {
       compactSlider("H", value: sizeBinding(\.height, pairedPosition: \.y), range: 0.05...0.9)
       compactSlider("Text", value: doubleBinding(\.labelSize, range: 12...96), range: 12...96)
       compactSlider("Rotate", value: doubleBinding(\.rotation, range: -180...180), range: -180...180)
+      HStack(spacing: 8) {
+        Button("−15°") { rotate(by: -15) }
+        Button("Reset") { item.rotation = 0 }
+        Button("+15°") { rotate(by: 15) }
+      }
+      .buttonStyle(.bordered)
 
       HStack(spacing: 8) {
         Button(action: onDuplicate) {
@@ -3325,6 +3234,39 @@ private struct CustomEditorItemFields: View {
     }
   }
 
+  private func numberField(_ title: String, keyPath: WritableKeyPath<CustomItem, Int>, range: ClosedRange<Int>) -> some View {
+    TextField(title, value: integerBinding(keyPath, range: range), format: .number)
+      .keyboardType(.numberPad)
+      .textFieldStyle(.roundedBorder)
+  }
+
+  private var sliderStyleBinding: Binding<CustomSliderStyle> {
+    Binding {
+      item.sliderStyle ?? .standard
+    } set: { style in
+      onBeginEdit()
+      item.sliderStyle = style
+    }
+  }
+
+  private func integerBinding(_ keyPath: WritableKeyPath<CustomItem, Int>, range: ClosedRange<Int>) -> Binding<Int> {
+    Binding(
+      get: { item[keyPath: keyPath] },
+      set: { item[keyPath: keyPath] = min(max(range.lowerBound, $0), range.upperBound) }
+    )
+  }
+
+  private func colorBinding(_ keyPath: WritableKeyPath<CustomItem, CodableColor>) -> Binding<Color> {
+    Binding(
+      get: { item[keyPath: keyPath].color },
+      set: { item[keyPath: keyPath] = CodableColor($0) }
+    )
+  }
+
+  private func rotate(by degrees: Double) {
+    item.rotation = min(max(-180, item.rotation + degrees), 180)
+  }
+
   private func binding(_ keyPath: WritableKeyPath<CustomItem, Double>, maxValue: Double) -> Binding<Double> {
     Binding(
       get: { item[keyPath: keyPath] },
@@ -3396,7 +3338,7 @@ private struct CustomItemControl: View {
     case .panic:
       buttonView(active: false)
     case .keyCommand:
-      buttonView(active: isTouching)
+      buttonView(active: isTouching || app.isControlActive(controller: item.cc, channel: item.channel))
     case .image:
       imageView
     case .video:
@@ -3436,12 +3378,37 @@ private struct CustomItemControl: View {
   private var sliderView: some View {
     GeometryReader { proxy in
       let ratio = Double(item.value) / 127.0
+      let isHorizontal = item.kind == .ccSliderX
+      let isSpring = (item.sliderStyle ?? .standard) == .spring
+      let handleDiameter = min(28, max(18, min(proxy.size.width, proxy.size.height) * 0.76))
+      let handleX = isHorizontal
+        ? handleDiameter / 2 + (proxy.size.width - handleDiameter) * ratio
+        : proxy.size.width / 2
+      let handleY = isHorizontal
+        ? proxy.size.height / 2
+        : proxy.size.height - handleDiameter / 2 - (proxy.size.height - handleDiameter) * ratio
       ZStack(alignment: item.kind == .ccSliderX ? .leading : .bottom) {
         RoundedRectangle(cornerRadius: 12, style: .continuous)
           .fill(item.fill.color.opacity(0.35))
           .overlay(RoundedRectangle(cornerRadius: 12).stroke(.white.opacity(0.16), lineWidth: 1))
 
-        if item.kind == .ccSliderX {
+        if isSpring {
+          SpringSliderCoil(horizontal: isHorizontal)
+            .stroke(item.activeFill.color.opacity(0.82), style: StrokeStyle(lineWidth: 2.2, lineCap: .round, lineJoin: .round))
+            .padding(isHorizontal ? .horizontal : .vertical, handleDiameter * 0.65)
+            .padding(isHorizontal ? .vertical : .horizontal, handleDiameter * 0.28)
+            .shadow(color: item.activeFill.color.opacity(0.55), radius: 5)
+
+          Circle()
+            .fill(item.activeFill.color)
+            .overlay(Circle().stroke(.white.opacity(0.78), lineWidth: 1.5))
+            .shadow(color: item.activeFill.color.opacity(0.75), radius: 8)
+            .frame(width: handleDiameter, height: handleDiameter)
+            .position(x: handleX, y: handleY)
+            .scaleEffect(isTouching ? 1.14 : 1)
+            .animation(.spring(response: 0.32, dampingFraction: 0.54), value: item.value)
+            .animation(.spring(response: 0.24, dampingFraction: 0.48), value: isTouching)
+        } else if isHorizontal {
           RoundedRectangle(cornerRadius: 12)
             .fill(item.activeFill.color)
             .frame(width: proxy.size.width * ratio)
@@ -3455,6 +3422,7 @@ private struct CustomItemControl: View {
       .gesture(
         DragGesture(minimumDistance: 0)
           .onChanged { value in
+            isTouching = true
             let ratio: Double
             if item.kind == .ccSliderX {
               ratio = max(0, min(1, value.location.x / max(1, proxy.size.width)))
@@ -3463,6 +3431,14 @@ private struct CustomItemControl: View {
             }
             item.value = Int((ratio * 127).rounded())
             app.setCC(item: item, value: item.value)
+          }
+          .onEnded { _ in
+            isTouching = false
+            guard isSpring else { return }
+            withAnimation(.spring(response: 0.34, dampingFraction: 0.58)) {
+              item.value = 64
+            }
+            app.setCC(item: item, value: 64)
           }
       )
     }
@@ -3529,13 +3505,14 @@ private struct CustomItemControl: View {
           glow: app.preset.theme.glowOnTouch,
           imageData: item.imageData,
           labelSize: item.labelSize,
-          rotation: item.rotation
+          rotation: 0
         )
       }
 
       PadShapePath(shape: item.shape)
         .stroke(customBorder(active: false), lineWidth: 2)
     }
+    .rotationEffect(.degrees(item.rotation))
   }
 
   private var customRow: Int {
@@ -3561,6 +3538,37 @@ private struct CustomItemControl: View {
       return active ? app.preset.theme.activeGlow.color : app.preset.theme.padGlow.color
     }
     return active ? themedActiveGlowColor(app.preset.theme, row: customRow, maxRow: 7) : themedGlowColor(app.preset.theme, row: customRow, maxRow: 7)
+  }
+}
+
+private struct SpringSliderCoil: Shape {
+  let horizontal: Bool
+
+  func path(in rect: CGRect) -> Path {
+    guard rect.width > 0, rect.height > 0 else { return Path() }
+    var path = Path()
+    let segmentCount = max(4, Int((horizontal ? rect.width : rect.height) / 12))
+
+    if horizontal {
+      let segment = rect.width / CGFloat(segmentCount)
+      path.move(to: CGPoint(x: rect.minX, y: rect.midY))
+      for index in 0..<segmentCount {
+        let x = rect.minX + segment * CGFloat(index + 1)
+        let y = index.isMultiple(of: 2) ? rect.minY : rect.maxY
+        path.addLine(to: CGPoint(x: x, y: y))
+      }
+      path.addLine(to: CGPoint(x: rect.maxX, y: rect.midY))
+    } else {
+      let segment = rect.height / CGFloat(segmentCount)
+      path.move(to: CGPoint(x: rect.midX, y: rect.minY))
+      for index in 0..<segmentCount {
+        let x = index.isMultiple(of: 2) ? rect.minX : rect.maxX
+        let y = rect.minY + segment * CGFloat(index + 1)
+        path.addLine(to: CGPoint(x: x, y: y))
+      }
+      path.addLine(to: CGPoint(x: rect.midX, y: rect.maxY))
+    }
+    return path
   }
 }
 
